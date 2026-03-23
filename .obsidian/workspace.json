@@ -1,0 +1,258 @@
+{
+  "main": {
+    "id": "3fc911c1173ba15e",
+    "type": "split",
+    "children": [
+      {
+        "id": "6fa0333e31860ad3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f9f3e40c3afebe63",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/BigData/Spark/RDD/Concept of RDD.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Concept of RDD"
+            }
+          },
+          {
+            "id": "5c48d246ee0d5cfe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/BigData/Spark/RDD/Concept of RDD.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Concept of RDD"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e633a4b4aaf7670c",
+    "type": "split",
+    "children": [
+      {
+        "id": "ef11fe86e2f71f43",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fac529f2013f66ca",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "8a73c64311c988ff",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "1545af1ea46b9bd2",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ef50e352ee2e466e",
+    "type": "split",
+    "children": [
+      {
+        "id": "e66af5162d012adf",
+        "type": "tabs",
+        "dimension": 22.25378787878788,
+        "children": [
+          {
+            "id": "3dac6652f8f1ffc8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Notes/BigData/Spark/RDD/Concept of RDD.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Concept of RDD"
+            }
+          },
+          {
+            "id": "6e2e7e228bca9e39",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "1fbe3084edb05b0a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "a87f83aae38bf0b8",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "8dd27257657c8cd1",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {
+                "file": "pattern_matching.md"
+              },
+              "icon": "lucide-file-signature",
+              "title": "Footnotes"
+            }
+          }
+        ]
+      },
+      {
+        "id": "b058757ef5db1f88",
+        "type": "tabs",
+        "dimension": 77.74621212121212,
+        "children": [
+          {
+            "id": "3c4033861328cce8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Notes/BigData/Spark/RDD/Concept of RDD.md",
+                "followCursor": true,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Concept of RDD"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 360.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "markdown-importer:Open format converter": false,
+      "switcher:Open quick switcher": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "graph:Open graph view": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "5c48d246ee0d5cfe",
+  "lastOpenFiles": [
+    "Notes/BigData/Spark/Resilient Distributed Datasets.md",
+    "Notes/BigData/Spark/RDD/Operations.md",
+    "Notes/BigData/Spark/RDD/Concept of RDD.md",
+    "Notes/BigData/Spark/RDD/What is RDD.md",
+    "Notes/BigData/Spark/spark.md",
+    "Notes/BigData/Spark/The Spark Revolution.md",
+    "Notes/BigData/Spark/The Spark Ecosystem Modules.md",
+    "Notes/BigData/Big Data.md",
+    "Notes/BigData/Spark/RDD",
+    "Notes/BigData/yarn.md",
+    "Notes/BigData/Spark/Spark.md",
+    "Notes/BigData/Map reduce.md",
+    "Notes/BigData/HDFS commands.md",
+    "Notes/BigData/The 5 V's of big data.md",
+    "Notes/BigData/The problem of storing and processing petabytes of information.md",
+    "Notes/BigData/Understanding the Hadoop Distributed File System.md",
+    "Notes/BigData/YARN.md",
+    "Notes/BigData/Evolution from traditional centralized systems to distributed architectures.md",
+    "Notes/Uncategorized/IEEE 745 standard for floating points.md",
+    "Notes/rust/Functions.md",
+    "Notes/rust/Control Flow.md",
+    "Notes/rust/Common Programming Concepts.md",
+    "Notes/rust/Comments.md",
+    "Notes/rust/Cargo.md",
+    "Notes/rust/Enums.md",
+    "Notes/rust/Rust.md",
+    "Notes/rust/Vector.md",
+    "Notes/BigData/Spark",
+    "Notes/BigData",
+    "Notes/Uncategorized",
+    "Notes/rust/Untitled.base",
+    "Notes/AI and ML",
+    "DSA",
+    "Notes/python",
+    "Notes/rust",
+    "Draft"
+  ]
+}

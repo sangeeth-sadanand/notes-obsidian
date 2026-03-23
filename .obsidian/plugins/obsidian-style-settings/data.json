@@ -1,0 +1,16 @@
+{
+  "obsidian-prism-theme@@color-schemes-dt": "pt-color-scheme-indigo-dt",
+  "obsidian-prism-theme@@dark-accent-color-preset": "pt-accent-color-purple-dt",
+  "obsidian-prism-theme@@file-line-width": 1425,
+  "blue-topaz-theme@@color-scheme-options": "color-scheme-options-topaz-nord",
+  "Blue-Topaz-Codebox-Highlight@@text-color-code@@light": "#1E2D62",
+  "Appearance-dark@@card-layout-open-dark": false,
+  "Appearance-dark@@theme-dark-style-select": "theme-dark-background-black",
+  "Editor@@line-hover-indicator": true,
+  "Editor@@text-align-justify": true,
+  "Editor@@bold-color@@dark": "#73B4FF",
+  "Editor@@italic-color@@dark": "#807CFF",
+  "Editor@@inline-code-normal@@dark": "#E3FFBA",
+  "Editor@@codeblock-style-select": "codeblock-style-dracula",
+  "Editor@@link-unresolved-color@@dark": "#D01E8A"
+}
