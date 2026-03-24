@@ -1,13 +1,15 @@
 # Spark
 
 1. Apache Spark Architecture
-	- [[Notes/BigData/Spark/The Spark Revolution|The Spark Revolution]]
-	- [[Notes/BigData/Spark/The Spark Revolution#Unified Analytics Engine|Unified Analytics Engine]]
-	- [[Notes/BigData/Spark/The Spark Revolution#Core components|Core components]]
-	- [[Notes/BigData/Spark/The Spark Revolution#Spark Context as the entry point for functionality|Spark Context as the entry point for functionality]]
-	- [[Notes/BigData/Spark/The Spark Revolution#Execution flow|Execution flow]]
-2.   [[Notes/BigData/Spark/The Spark Ecosystem Modules|The Spark Ecosystem Modules]]
-3.  [[Notes/BigData/Spark/Resilient Distributed Datasets| Resilient Distributed Datasets]]
+	- [[Notes/Big Data/Spark/The Spark Revolution|The Spark Revolution]]
+	- [[Notes/Big Data/Spark/The Spark Revolution#Unified Analytics Engine|Unified Analytics Engine]]
+	- [[Notes/Big Data/Spark/The Spark Revolution#Core components|Core components]]
+	- [[Notes/Big Data/Spark/The Spark Revolution#Spark Context as the entry point for functionality|Spark Context as the entry point for functionality]]
+	- [[Notes/Big Data/Spark/The Spark Revolution#Execution flow|Execution flow]]
+2.   [[Notes/Big Data/Spark/The Spark Ecosystem Modules|The Spark Ecosystem Modules]]
+3.  [[Notes/Big Data/Spark/Resilient Distributed Datasets/Resilient Distributed Datasets|Resilient Distributed Datasets]]
+4. [[Notes/Big Data/Spark/SQL/SQL|SQL]]
+5. 
 
 
 
@@ -23,13 +25,6 @@
 
 
 
-
-- **Chapter 5: Fundamental Spark Programming Concepts**
-    
-    - Resilient Distributed Datasets (RDDs): The foundational immutable abstraction.
-    - The Dataframe and Dataset APIs for structured data.
-    - The Power of Lazy Evaluation: Optimizing execution through DAGs.
-    - Transformations (map, filter) versus Actions (count, collect).
 
 - **Chapter 7: Performance Tuning and Optimization**
     
@@ -47,12 +42,17 @@
     - **Broadcast Hash Join**: The fastest join for small-to-large table matching.
     - Bucketing: Pre-partitioning data to eliminate costly shuffles during joins.
 
-
+- **Chapter 8: Dealing with Data Skew: The "Salt" Technique**
+    
+    - Identifying Skew: Using the Spark Web UI to find "straggler" partitions.
+    - **Key Salting**: Introducing randomness to "hot keys" to distribute data evenly across the cluster.
+        
 - **Chapter 6: Advanced Query Optimization: Catalyst and AQE**
     
     - The Catalyst Optimizer: From Analysis to Physical Planning.
     - Rule-Based Optimization: Constant Folding, Filter Pushdown, and Projection Pruning.
     - **Adaptive Query Execution (AQE)**: Re-optimizing query plans at runtime based on intermediate statistics.
+- 
 - **Chapter 7: High-Performance Memory and CPU Management**
     
     - **Project Tungsten**: Improving efficiency through bytecode generation and cache-aware algorithms.

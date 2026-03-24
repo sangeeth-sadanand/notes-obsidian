@@ -1,0 +1,6 @@
+1. [[Notes/Big Data/Spark/Resilient Distributed Datasets/What is RDD|What is RDD]]
+2. [[Notes/Big Data/Spark/Resilient Distributed Datasets/Concept of RDD|Concept of RDD]]
+3. [[Notes/Big Data/Spark/Resilient Distributed Datasets/Operations|Operations]]
+4. [[Notes/Big Data/Spark/Resilient Distributed Datasets/Concept of RDD#Data partitions|Data Partitioning]]
+5. [[Notes/Big Data/Spark/Resilient Distributed Datasets/Operations#Caching vs. Persistence|Caching vs. Persistence]]
+6. [[Notes/Big Data/Spark/Resilient Distributed Datasets/Operations#Shared Variable|Shared Variables]]

@@ -14,7 +14,7 @@
     - When **fine-grained control** over transformations is needed.
     - For **low-level operations** where DataFrames/Datasets may not suffice
 
-## 📊 Comparison: RDD vs DataFrame vs Dataset
+## Comparison: RDD vs DataFrame vs Dataset
 
 | Feature         | RDD                       | DataFrame                   | Dataset                      |
 | --------------- | ------------------------- | --------------------------- | ---------------------------- |
