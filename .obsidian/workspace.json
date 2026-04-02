@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f9f3e40c3afebe63",
+            "id": "c6e2e1e87179bc84",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Big Data/Big Data.md",
+                "file": "Notes/rust/Iterators.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Big Data"
+              "title": "Iterators"
             }
           }
         ]
@@ -95,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Notes/Big Data/Big Data.md",
+                "file": "Notes/rust/Iterators.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Big Data"
+              "title": "Backlinks for Iterators"
             }
           },
           {
@@ -175,13 +175,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notes/Big Data/Big Data.md",
+                "file": "Notes/rust/Iterators.md",
                 "followCursor": true,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Big Data"
+              "title": "Outline of Iterators"
             }
           }
         ]
@@ -201,42 +201,44 @@
       "bases:Create new base": false
     }
   },
-  "active": "f9f3e40c3afebe63",
+  "active": "c6e2e1e87179bc84",
   "lastOpenFiles": [
-    "Notes/Big Data/Spark/spark.md",
+    "Notes/rust/rust.md",
+    "Notes/rust/Iterators.md",
+    "Notes/Big Data/DataBricks/DataBricks.md",
+    "Notes/Big Data/DataBricks",
     "Notes/Big Data/Big Data.md",
+    "Notes/Big Data/Spark/spark.md",
+    "Notes/Big Data/Spark/re partition vs partition.md",
+    "Notes/Big Data/yarn.md",
+    "Notes/Big Data/Understanding the Hadoop Distributed File System.md",
+    "Notes/Big Data/The problem of storing and processing petabytes of information.md",
+    "Notes/Big Data/The 5 V's of big data.md",
+    "Notes/Big Data/Map reduce.md",
+    "Notes/Big Data/Hive.md",
+    "Notes/Big Data/HDFS commands.md",
+    "Notes/Big Data/File formats.md",
+    "To do.md",
+    "Notes/Big Data/Spark/SQL/Memory Optimization.md",
     "Notes/Big Data/Spark/SQL/SQL.md",
     "Notes/Big Data/Spark/SQL/Operations.md",
-    "To do.md",
-    "Notes/Git and CICD",
-    "Notes/Big Data/Spark/SQL/Creating Dataframes.md",
-    "Notes/Big Data/Spark/Resilient Distributed Datasets/Operations.md",
     "Notes/Big Data/Spark/Resilient Distributed Datasets/Concept of RDD.md",
+    "Notes/Big Data/Spark/Resilient Distributed Datasets/Operations.md",
     "Notes/Big Data/Spark/Resilient Distributed Datasets/Resilient Distributed Datasets.md",
+    "Notes/Big Data/Spark/Joins.md",
+    "Notes/Big Data/Spark/AQE.md",
+    "Notes/Big Data/Spark/SQL/Transformations vs Actions.md",
+    "Notes/Big Data/Spark/media/Spark_memory.png",
+    "Notes/Big Data/Spark/media",
+    "Notes/Big Data/Spark/SQL/Advance operator.md",
     "Notes/Big Data/Spark/SQL/Core concepts.md",
+    "Notes/Git and CICD",
     "Notes/Big Data/Spark/SQL",
-    "Notes/Big Data/Spark/Spark.md",
-    "Notes/Big Data/Spark/Resilient Distributed Datasets/What is RDD.md",
-    "Notes/Big Data/YARN.md",
-    "Notes/Big Data/Spark/The Spark Ecosystem Modules.md",
-    "Notes/Big Data/Spark/The Spark Revolution.md",
-    "Notes/rust/rust.md",
     "Notes/Big Data/Spark/Resilient Distributed Datasets",
-    "Notes/Big Data/Map reduce.md",
-    "Notes/Big Data/HDFS commands.md",
-    "Notes/Big Data/The 5 V's of big data.md",
-    "Notes/Big Data/The problem of storing and processing petabytes of information.md",
-    "Notes/Big Data/Understanding the Hadoop Distributed File System.md",
-    "Notes/BigData/YARN.md",
-    "Notes/Big Data/Evolution from traditional centralized systems to distributed architectures.md",
-    "Notes/Uncategorized/IEEE 745 standard for floating points.md",
-    "Notes/rust/Functions.md",
     "Notes/Big Data/Spark",
     "Notes/Big Data",
     "Notes/Uncategorized",
     "Notes/rust/Untitled.base",
-    "Notes/AI and ML",
-    "DSA",
-    "Notes/python"
+    "Notes/AI and ML"
   ]
 }

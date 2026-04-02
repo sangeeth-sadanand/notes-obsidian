@@ -1,18 +1,5 @@
 ## 📊 Big Data
 
-- [ ] HIVE
-	- Managed vs External table
-	- Partition vs bucketing
-	- schema evelution
-
-- [ ] **RDD**
-    -reduce Vs reduce by key
-    - group by vs reduce by key
-- [ ] **Spark**
-
-    - re partitionvs coalesce
-    - cache
-    
 - [ ] **Databricks**
     - Workspace & collaborative notebooks
     - Delta Lake (ACID, schema evolution, time travel)

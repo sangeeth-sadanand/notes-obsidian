@@ -14,10 +14,11 @@
 
 3. [[Notes/Big Data/YARN|YARN]]
 4. [[Notes/Big Data/Map reduce|Map Reduce]]
-5. [[Hive]]
+5. [[Notes/Big Data/Hive|Hive]]
 6. [[Notes/Big Data/Spark/Spark|Spark]]
-7. [[File formats]]
-
+7. [[Notes/Big Data/File formats|File format]]
+8. [[Notes/Big Data/Spark/re partition vs partition|re partition vs partition]]
+9. [[Notes/Big Data/DataBricks/DataBricks|DataBricks]]
 
 
 

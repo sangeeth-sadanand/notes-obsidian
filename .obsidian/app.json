@@ -1,5 +1,7 @@
 {
   "newLinkFormat": "absolute",
   "showInlineTitle": true,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "attachmentFolderPath": "./.media"
 }
