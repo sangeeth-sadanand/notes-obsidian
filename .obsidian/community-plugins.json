@@ -1,4 +1,7 @@
 [
-  "editing-toolbar",
-  "obsidian-style-settings"
+  "obsidian-style-settings",
+  "code-styler",
+  "breadcrumbs",
+  "liquid-templates",
+  "dataview"
 ]

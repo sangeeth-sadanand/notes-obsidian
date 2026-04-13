@@ -1,0 +1,7 @@
+{
+  "templatesFolder": "001_Meta/Templates",
+  "excludeFolders": "",
+  "dateFormat": "yyyy-MM-dd",
+  "timeFormat": "k:m",
+  "autocompleteTrigger": ";;"
+}

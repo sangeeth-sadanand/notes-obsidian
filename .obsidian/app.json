@@ -1,7 +1,11 @@
 {
   "newLinkFormat": "absolute",
-  "showInlineTitle": true,
   "alwaysUpdateLinks": true,
-  "newFileLocation": "current",
-  "attachmentFolderPath": "./.media"
+  "useMarkdownLinks": false,
+  "showInlineTitle": false,
+  "userIgnoreFilters": [
+    "001_Meta/Templates/",
+    "999_Temp/"
+  ],
+  "readableLineLength": false
 }

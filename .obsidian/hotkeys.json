@@ -1,5 +1,5 @@
 {
-  "editing-toolbar:header1-text": [
+  "editor:set-heading-1": [
     {
       "modifiers": [
         "Mod"
@@ -7,8 +7,7 @@
       "key": "1"
     }
   ],
-  "workspace:goto-tab-1": [],
-  "editing-toolbar:header2-text": [
+  "editor:set-heading-2": [
     {
       "modifiers": [
         "Mod"
@@ -16,7 +15,7 @@
       "key": "2"
     }
   ],
-  "editing-toolbar:header3-text": [
+  "editor:set-heading-3": [
     {
       "modifiers": [
         "Mod"
@@ -24,7 +23,10 @@
       "key": "3"
     }
   ],
-  "editing-toolbar:header4-text": [
+  "workspace:goto-tab-3": [],
+  "workspace:goto-tab-1": [],
+  "workspace:goto-tab-2": [],
+  "editor:set-heading-4": [
     {
       "modifiers": [
         "Mod"
@@ -32,7 +34,7 @@
       "key": "4"
     }
   ],
-  "editing-toolbar:header5-text": [
+  "editor:set-heading-5": [
     {
       "modifiers": [
         "Mod"
@@ -40,7 +42,7 @@
       "key": "5"
     }
   ],
-  "editing-toolbar:header6-text": [
+  "editor:set-heading-6": [
     {
       "modifiers": [
         "Mod"
@@ -48,16 +50,6 @@
       "key": "6"
     }
   ],
-  "editing-toolbar:header0-text": [
-    {
-      "modifiers": [
-        "Mod"
-      ],
-      "key": "0"
-    }
-  ],
-  "workspace:goto-tab-2": [],
-  "workspace:goto-tab-3": [],
   "workspace:goto-tab-4": [],
   "workspace:goto-tab-5": [],
   "workspace:goto-tab-6": []
