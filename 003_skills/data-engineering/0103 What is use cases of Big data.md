@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[003_skills/data-engineering/01_Introduction|01_Introduction]]"
+  - "[[003_skills/data-engineering/01 Introduction|01 Introduction]]"
 down:
 prev:
 topic: false
@@ -8,9 +8,14 @@ question: What is use cases of Big data?
 ---
 # What is use cases of Big data?
 
-
 > [!Summary] Summary
-> 
+> - Big data is about collecting, storing organizing, processing, analyzing and generating actionable insights based on huge data at high speed
+> - Big data can be used in various domain where data is large, huge processing is needed to generate inference.
+>     - Banking sector for fraud detection at real-time.
+>     - Personalized recommendation system for e-com.
+>     - Health care to process genomic data
+>     - Real time processing of IOT device
+>   
 > | **Industry**      | **Primary Use Case**                        | **Key Benefit**                                      |
 > | ----------------- | ------------------------------------------- | ---------------------------------------------------- |
 > | **Retail**        | Inventory optimization & Sentiment analysis | Reduces waste and improves brand loyalty.            |

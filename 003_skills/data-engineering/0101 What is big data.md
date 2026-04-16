@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[003_skills/data-engineering/01_Introduction|01_Introduction]]"
+  - "[[003_skills/data-engineering/01 Introduction|01 Introduction]]"
 down:
 prev:
 topic: false
@@ -9,8 +9,13 @@ question: What is big data?
 # What is big data?
 
 
-> [!Summary] Summary
-> Contents
+> [!Summary] 
+> - Its a field of engineering that enables to store and process humongous amount of data which cannot be stored or processed on a single machine in an efficient manner.
+> - For this we split the data into small managable chunk. where it can be store and processed across multiple computers.
+> - This multiple computer which co-ordinate with each other to store, process data together forms a cluster
+> - In big data, the data needs to be following the 5V's. The data should have huge **volume** or the data should flow in with high **velocity** or both The nature of this data can have **variety** of form like structured, unstructured, (Tables, Images, text, Videos) The **value** and **veracity** (quality reliability) of the data is important. As his data is used to make analysis and infer important decisions based on the data.
+
+
 
 - **Big data** refers to extremely large and complex datasets that traditional data-processing software simply can’t manage.
 - Because big data is too large for a single computer, it is usually handled through **distributed computing**. 

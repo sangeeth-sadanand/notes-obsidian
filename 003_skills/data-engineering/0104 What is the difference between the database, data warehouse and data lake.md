@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[003_skills/data-engineering/01_Introduction|01_Introduction]]"
+  - "[[003_skills/data-engineering/01 Introduction|01 Introduction]]"
 down:
 prev:
 topic: false
@@ -11,6 +11,16 @@ question: What is the difference between the database, data warehouse and data l
 
 > [!Summary] Summary
 > 
+> - A database is used for structured transactional data that is created, modified, deleted
+> -   The data is generally stored in clean format and enforces schema on write, they are expensive than data lake as well as data warehouse
+> - A data warehouse usually stores a structure, processed data
+>     - It also enforces schema on write, usually used for analytical purpose
+>     - Costing is lower than database, It uses ETL process
+> - A data lake can store any raw type data (structured, unstructured)
+>     - It uses schema on read, with ELT processing
+>     - It is used for deep data exploration with huge data.
+>     - It is very cost effective.
+>    
 > | **Feature**      | **Database**               | **Data Warehouse**             | **Data Lake**                      |
 > | ---------------- | -------------------------- | ------------------------------ | ---------------------------------- |
 > | **Data Type**    | Structured (Relational)    | Structured (Processed)         | All types (Raw)                    |

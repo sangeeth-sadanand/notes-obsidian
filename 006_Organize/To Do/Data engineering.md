@@ -1,36 +1,11 @@
-# Data-engineering
 
-[[003_skills/data-engineering/01_Introduction]]
-
-
-## Introduction
-- [x] What is big data?
-- [x] What is difference between monolithic Vs distributed system?
-- [x] What is use cases of Big data?
-- [ ] What is the difference between the database, data warehouse and data lake?
-- [ ] Explain data engineering flow.
-- [ ] What is cloud, its types and advantages?
-- [ ] Compare serverless and server based service
-## Hadoop
-- [ ] What is hadoop?
-- [ ] Describe tools used in hadoop eco-system
-- [ ] What is components of hadoop?
-## Storage layer
-- [ ] What is HDFS?
-- [ ] How does HDFS stores larger files across multiple nodes?
-- [ ] How the files are read?
-- [ ] What is role of data node and name node?
-- [ ] How replication ensures fault tolerance in HDFS?
-- [ ] What is cloud and on-premise options for data storage
-- [ ] What are the commands used for interaction with HDFS?
-- [ ] How different file format help in efficient data storage
 ## Processing layer
 - [ ] What is the programming model of map-reduce?
 - [ ] How does map phase differ from reduce phase?
 - [ ] Advantages and disadvantages of map-reduce.
 - [ ] What problem does YARN solve in hadoop?
 - [ ] What is the use of resource manager and node manager?
-## Hire
+## Hive
 - [ ] What is hive?
 - [ ] Difference between HQL and SQL
 - [ ] What is role of meta store in hive?

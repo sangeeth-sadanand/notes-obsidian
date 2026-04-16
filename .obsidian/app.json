@@ -2,10 +2,12 @@
   "newLinkFormat": "absolute",
   "alwaysUpdateLinks": true,
   "useMarkdownLinks": false,
-  "showInlineTitle": false,
+  "showInlineTitle": true,
   "userIgnoreFilters": [
     "001_Meta/Templates/",
     "999_Temp/"
   ],
-  "readableLineLength": false
+  "readableLineLength": false,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "000_+"
 }

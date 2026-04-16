@@ -52,5 +52,13 @@
   ],
   "workspace:goto-tab-4": [],
   "workspace:goto-tab-5": [],
-  "workspace:goto-tab-6": []
+  "workspace:goto-tab-6": [],
+  "editor:toggle-blockquote": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "Q"
+    }
+  ]
 }

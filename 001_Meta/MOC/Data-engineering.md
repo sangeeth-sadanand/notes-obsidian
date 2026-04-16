@@ -4,6 +4,7 @@
 const PARENT_FIELD = "up";
 const ROOT = dv.current().file.path;
 // --- normalize parent field ---
+debugger;
 function getParent(page) {
   let raw = page[PARENT_FIELD];
   if (!raw) return null;

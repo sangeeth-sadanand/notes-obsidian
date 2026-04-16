@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[003_skills/data-engineering/01_Introduction|01_Introduction]]"
+  - "[[003_skills/data-engineering/01 Introduction|01 Introduction]]"
 down:
 prev:
 topic: false
@@ -10,6 +10,17 @@ question: What is difference between monolithic Vs distributed system?
 
 
 > [!Summary] Summary
+>  - A **monolithic** system all the data, processing of data occurs on a single machine.
+>     - To process huge data these machine need a **large resource** (CPU and RAM)
+>     - The performance is not always proportional to the added resource. Also the resources reach the hardware limit.
+>     - We have a **single point of failure**
+>     - Throughput is limited by single-node I/O
+> - A **distributed system**, data and the processing are distributed among a set of coordinated system which forms a cluster.
+>     - Here, we can add more systems to improve the resources, there is **no limit to scalability** (on-paper)
+>     - It is **fault tolerant**
+>     - if one node (system) fails we can re-distribute the load to another node.
+>     - we can break a big task to sub-task and process each task in parallel in each node
+>   
 > | **Feature**         | **Monolithic System**                | **Distributed System (Big Data)**      |
 > | ------------------- | ------------------------------------ | -------------------------------------- |
 > | **Scaling**         | **Vertical** (Scale-up)              | **Horizontal** (Scale-out)             |
