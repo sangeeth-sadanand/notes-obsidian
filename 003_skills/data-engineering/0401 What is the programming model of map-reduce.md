@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[000_+/04 processing layer|04 processing layer]]"
+  - "[[003_skills/data-engineering/04 processing layer|04 processing layer]]"
 down:
 prev:
 topic: false
@@ -10,8 +10,16 @@ question: What is the programming model of map-reduce?
 
 
 > [!Summary] Summary
-> Contents
-
+> - The map-reduce has two stages Map stage and a reduce stage. It work by transforming data through a series of key-value pair
+> - In map phase it read data from source and breaks into smaller pieces and applies a map function to each piece independently producing intermediate result as (key, value)
+> - Before reduce phase this key value pair are shuffled such that same key land on same node
+> - In reduce phase aggregates are applied.
+> 
+> Mathematically, you can think of the MapReduce model as two distinct functions:
+> $$Map: (k_1, v_1) \rightarrow list(k_2, v_2)$$
+> 
+> $$Reduce: (k_2, list(v_2)) \rightarrow list(v_3)$$
+> 
 
 - The MapReduce programming model is the "engine" that processes the data stored in HDFS. 
 - It is designed to take a massive task and break it down into smaller, manageable pieces that can be run in parallel across a cluster of thousands of servers.
@@ -19,7 +27,9 @@ question: What is the programming model of map-reduce?
 
 ## The Core Phases of MapReduce
 
-The process follows a specific pipeline: **Input → Map → Shuffle/Sort → Reduce → Output**.
+The process follows a specific pipeline:
+
+**Input → Map → Shuffle/Sort → Reduce → Output**.
 
 ### Step 1: The Map Phase
 The input data (usually large files from HDFS) is split into chunks. The "Mapper" function takes these chunks and processes them independently.

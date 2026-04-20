@@ -3,5 +3,6 @@
   "theme": "obsidian",
   "textFontFamily": "Comic Sans MS",
   "interfaceFontFamily": "Comic Sans MS",
-  "baseFontSizeAction": true
+  "baseFontSizeAction": true,
+  "baseFontSize": 16
 }

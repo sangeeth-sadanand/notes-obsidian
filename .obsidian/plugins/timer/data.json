@@ -1,13 +1,13 @@
 {
   "timerButtonsSettings": {
-    "first": "1s",
-    "second": "1m",
-    "third": "10m",
-    "fourth": "1h"
+    "first": "5m",
+    "second": "10m",
+    "third": "30m",
+    "fourth": "40m"
   },
   "favoriteTimers": [],
   "stackTimerButtons": true,
-  "useVerboseTimeFormat": false,
+  "useVerboseTimeFormat": true,
   "verboseTimeFormatRemoveNotSetValues": false,
   "useOSNotification": true,
   "useCommaSeparationInDefaultTimeFormat": true,

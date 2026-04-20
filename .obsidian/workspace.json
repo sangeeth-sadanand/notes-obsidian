@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "2d617e0233943c25",
+        "id": "f81c0cc2c6f62a86",
         "type": "tabs",
         "children": [
           {
-            "id": "20155e8d06df2c0a",
+            "id": "24c09262470881a0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,22 +22,35 @@
             }
           },
           {
-            "id": "48a5850e94227882",
+            "id": "66fa34e34d23f7e7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "000_+/01 What is the programming model of map-reduce.md",
+                "file": "006_Organize/To Do/Data engineering.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01 What is the programming model of map-reduce"
+              "title": "Data engineering"
+            }
+          },
+          {
+            "id": "cb3f7058b168192e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "000_+/060105 What is role of driver, cluster manager and executor manager.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "060105 What is role of driver, cluster manager and executor manager"
             }
           }
         ],
-        "currentTab": 1,
-        "stacked": true
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -94,7 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 426.5110321044922
+    "width": 424.50418853759766
   },
   "right": {
     "id": "08e1af449615b3c0",
@@ -103,6 +116,7 @@
       {
         "id": "f25f9c2c17b8fa10",
         "type": "tabs",
+        "dimension": 37.68115942028986,
         "children": [
           {
             "id": "93c091aa6c1c167a",
@@ -172,13 +186,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "000_+/01 What is the programming model of map-reduce.md",
+                "file": "003_skills/data-engineering/0203 Describe tools used in Hadoop eco-system.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 01 What is the programming model of map-reduce"
+              "title": "Outline of 0203 Describe tools used in Hadoop eco-system"
             }
           },
           {
@@ -187,8 +201,8 @@
             "state": {
               "type": "bc-matrix-view",
               "state": {},
-              "icon": "blinds",
-              "title": "Matrix view"
+              "icon": "lucide-ghost",
+              "title": "bc-matrix-view"
             }
           },
           {
@@ -197,18 +211,19 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "000_+/01 What is the programming model of map-reduce.md"
+                "file": "006_Organize/To Do/Data engineering.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for 01 What is the programming model of map-reduce"
+              "title": "File properties for Data engineering"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       },
       {
         "id": "a53f6b3c552d2cef",
         "type": "tabs",
+        "dimension": 62.31884057971014,
         "children": [
           {
             "id": "c16c91332ec74102",
@@ -226,7 +241,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 491.5
+    "width": 403.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -237,40 +252,39 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "obsidian-statusbar-pomo:Start pomodoro": false,
       "timer:Open timer": false
     }
   },
-  "active": "48a5850e94227882",
+  "active": "66fa34e34d23f7e7",
   "lastOpenFiles": [
+    "000_+/060106 What are main modules of spark eco-system.md",
+    "000_+/060105 What is role of driver, cluster manager and executor manager.md",
+    "000_+/060104 Why spark is called unified execution engine.md",
+    "000_+/060103 How does spark Session act as entry point.md",
+    "000_+/060102 How does spark execution flow differ from map-reduce execution.md",
     "006_Organize/To Do/Data engineering.md",
-    "000_+/01 What is the programming model of map-reduce.md",
-    "000_+/04 processing layer.md",
+    "000_+/060101 What problems do spark solve compared to Hadoop map reduce.md",
+    "000_+/06 Spark.md",
+    "005_Glance/001_spark session configs.md",
+    "000_+/0601 Architecture.md",
     "001_Meta/MOC/Data-engineering.md",
-    "001_Meta/media/data-engineering-flow.svg",
-    "003_skills/data-engineering/0305 How different file format help in efficient data storage.md",
-    "003_skills/data-engineering/0304 What are the commands used for interaction with HDFS.md",
-    "003_skills/data-engineering/0303 What is cloud and on-premise options for data storage.md",
-    "003_skills/data-engineering/0302 How replication ensures fault tolerance in HDFS.md",
-    "003_skills/data-engineering/0301 What is HDFS.md",
-    "003_skills/data-engineering/03 Storage layer.md",
-    "003_skills/data-engineering/02 Hadoop.md",
-    "003_skills/data-engineering/01 Introduction.md",
-    "001_Meta/media/hdfs_ls_cmd.svg",
-    "003_skills/data-engineering/0107 What is cloud, its types and advantages.md",
-    "003_skills/data-engineering/0106 Explain data engineering flow.md",
-    "003_skills/data-engineering/0105 Compare serverless and server based service.md",
-    "003_skills/data-engineering/0104 What is the difference between the database, data warehouse and data lake.md",
     "003_skills/data-engineering/0103 What is use cases of Big data.md",
-    "003_skills/data-engineering/0102 What is difference between monolithic Vs distributed system.md",
-    "003_skills/data-engineering/0101 What is big data.md",
-    "003_skills/data-engineering/0203 Describe tools used in Hadoop eco-system.md",
-    "003_skills/data-engineering/0202 What is components of Hadoop.md",
-    "003_skills/data-engineering/0201 What is Hadoop.md",
-    "001_Meta/MOC/Python.md",
-    "000_+/How the files are read.md",
-    "000_+/How does HDFS stores larger files across multiple nodes.md",
-    "000_+/What is role of data node and name node.md",
+    "003_skills/data-engineering/05 Hive.md",
+    "003_skills/data-engineering/0503 What is role of meta store in hive.md",
+    "003_skills/data-engineering/0504 How does hive translate to MR and spark.md",
+    "003_skills/data-engineering/0505 Difference between Internal and external tables.md",
+    "003_skills/data-engineering/0506 How does schema evolution handled in Hive.md",
+    "003_skills/data-engineering/0502 Difference between HQL and SQL.md",
+    "003_skills/data-engineering/0501 What is Hive.md",
+    "000_+/temp.md",
+    "003_skills/data-engineering/04 processing layer.md",
+    "003_skills/data-engineering/0401 What is the programming model of map-reduce.md",
+    "003_skills/data-engineering/0402 How does map phase differ from reduce phase.md",
+    "003_skills/data-engineering/0403 Advantages and disadvantages of map-reduce.md",
+    "003_skills/data-engineering/0405 What is the use of resource manager and node manager.md",
+    "003_skills/data-engineering/0404 What problem does YARN solve in hadoop.md",
+    "001_Meta/media/hdfs_ls_cmd.svg",
+    "001_Meta/media/data-engineering-flow.svg",
     "001_Meta/css/summary.css",
     "001_Meta/css/New Text Document.txt",
     "001_Meta/css",
