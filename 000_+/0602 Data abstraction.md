@@ -1,0 +1,7 @@
+---
+up:
+  - "[[000_+/06 Spark|06 Spark]]"
+topic: true
+topic-id: 2
+---
+# Data abstraction

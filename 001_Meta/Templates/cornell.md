@@ -3,13 +3,13 @@ up:
 down:
 prev:
 topic: false
-question:
+question: "{{title}}?"
 ---
-# Question
+# {{title}}?
 
 
 > [!Summary] Summary
 > Contents
 
 
-## Detailed Summary
+

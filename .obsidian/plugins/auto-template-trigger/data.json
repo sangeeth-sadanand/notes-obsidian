@@ -1,0 +1,10 @@
+{
+  "folderSpecificTemplates": [
+    {
+      "folderPath": "001_Meta/Templates",
+      "templateName": ""
+    }
+  ],
+  "disablePrompt": true,
+  "debug": false
+}

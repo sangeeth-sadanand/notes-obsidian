@@ -5,5 +5,7 @@
   "liquid-templates",
   "dataview",
   "obsidian-paste-image-rename",
-  "timer"
+  "timer",
+  "webpage-html-export",
+  "auto-template-trigger"
 ]
