@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[000_+/0601 Architecture|0601 Architecture]]"
+  - "[[003_skills/data-engineering/0601 Architecture|0601 Architecture]]"
 down:
 prev:
 topic: false
@@ -10,7 +10,10 @@ question: How does spark execution flow differ from map-reduce execution
 
 
 > [!Summary] Summary
-> Contents
+> - In Map reduce to achieve a task entire task is divided into multiple jobs intermediate results of the Job are saved and read from disk. In a Job MR follows strict pattern of map, shuffle and reduce phase.
+>
+> - In spark, the entire task is a Job. Each job is divided into stages and intermediate results are stored in-memory instead of disk. It create a DAG when a transform is applied and it only executes when an action is performed DAG can be optimized with predicate push down, join strategies, etc. based on the type and size of data.
+
 
 - The fundamental difference in execution flow comes down to how each engine views a "job." 
 - Hadoop MapReduce views a job as a rigid, two-step process (Map, then Reduce), while Spark views a job as a fluid, multi-step graph called a **DAG (Directed Acyclic Graph)**.

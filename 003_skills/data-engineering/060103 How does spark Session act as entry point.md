@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[000_+/0601 Architecture|0601 Architecture]]"
+  - "[[003_skills/data-engineering/0601 Architecture|0601 Architecture]]"
 down:
 prev:
 topic: false
@@ -10,7 +10,13 @@ question: How does spark session act as entry point?
 
 
 > [!Summary] Summary
-> Contents
+> -	Spark session is unified entry point for spark 2+ version which encapsulated the three context Spark context - for RDD operation, SQL context- for Spark SQL and data frames, Hive Context for work with Hive tables
+> -	Spark Session provides a single entry point that handles all these functionalities, making the code cleaner
+> -	Through spark session spark functionality work in sync we can access data frames, execute SQL queries as well access underlying Spark context.
+> -	It allows to configure all the run time configs directly. It propagates to respective context and cluster manager
+> -	Spark session uses a builder pattern so that only one session is created across one application
+> -	We can use following code snippet for spark session
+
 
 
 - While the **SparkContext** was the original entry point, **SparkSession** (introduced in Spark 2.0) acts as a "unified" entry point. 

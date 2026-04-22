@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[000_+/0601 Architecture|0601 Architecture]]"
+  - "[[003_skills/data-engineering/0601 Architecture|0601 Architecture]]"
 down:
 prev:
 topic: false
@@ -10,7 +10,11 @@ question: Why spark is called unified execution engine?
 
 
 > [!Summary] Summary
-> Contents
+> -	Single platform is capable of handling a diverse range of data processing task.
+> -	It can process batch processing (process massive data, in- memory), real time processing with streaming, MLlib (for machine learning algo) and GraphX-data with complex relation)
+> -	Since all the component are handled in similar method we can use same data frame and catalyst optimizer
+> -	The benefit of unified execution is reduced complexity Code portability and consistent performance
+> 
 
 - Spark is called a **Unified Execution Engine** because it provides a single platform capable of handling a diverse range of data processing tasks that previously required separate, specialized systems.
 - Instead of stitching together five different technologies to build a data pipeline, Spark allows you to do everything within one codebase using a consistent set of APIs.

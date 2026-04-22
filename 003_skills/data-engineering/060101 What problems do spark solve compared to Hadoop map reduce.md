@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[000_+/0601 Architecture|0601 Architecture]]"
+  - "[[003_skills/data-engineering/0601 Architecture|0601 Architecture]]"
 down:
 prev:
 topic: false
@@ -10,7 +10,14 @@ question: What problems do spark solve compared to Hadoop map reduce?
 
 
 > [!Summary] Summary
-> Contents
+> -	Hadoop map reduce solved the big data problem of distributed computing but was not a speed demon
+> -	It writes the data back to storage unit after every job which created a I/o bottleneck. 
+> - On the other hand spark created one job with multiple stages and intermediate data in-memory
+> -	Iterative algorithms which needed same data was handled in memory instead of reading it from disk every time
+> -	Spark supported both batch and streaming process
+> -	spark reduced the complexity for boiler plate code
+> -	Spark provided all in one stack- Spark SQL, MLlib, graphx spark steaming
+
 
 
 - While Hadoop MapReduce revolutionized big data processing by allowing us to crunch massive datasets on commodity hardware, it wasn't exactly a "speed demon." 

@@ -35,7 +35,7 @@ If data is lost, Spark **recomputes only the lost partitions**, instead of re-ru
 - Once created, an RDD **cannot be changed**
 - Any transformation produces a **new RDD**
 
-This immutability makes recomputation **safe and deterministic**
+This immutability makes re-computation **safe and deterministic**
 
 ### Lineage-Based Recovery (Main Mechanism)
 

@@ -1,5 +1,6 @@
 ---
 up:
+  - "[[003_skills/data-engineering/0601 Architecture|0601 Architecture]]"
 down:
 prev:
 topic: false
@@ -9,7 +10,13 @@ question: What are main modules of spark eco-system?
 
 
 > [!Summary] Summary
-> Contents
+> 
+> The main modules in spark echo system are:
+> 1) **Spark Core** - It has RDD at its core which is optimize to read and write and perform basic logic.
+> 2) **Spark SQL** - It provide interface to perform SQL like high level abstraction.
+> 3) **Streaming**:- this module enables scalable, high- throughput, fault-tolerant stream process of live data
+> 4) **MLlib**:- It give basic classification , regression, clustering for ML
+> 5) **GraphX** combines RDD with graph database 
 
 - Apache Spark isn't just a single engine; it’s a massive ecosystem designed to handle everything from simple data processing to complex machine learning and real-time streaming.
 ## 1. Spark Core
