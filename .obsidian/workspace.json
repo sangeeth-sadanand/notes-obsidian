@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9c3bfe9d84edeccc",
+        "id": "06ec6eb3a4a1a8f5",
         "type": "tabs",
         "children": [
           {
-            "id": "24c09262470881a0",
+            "id": "067990dbfa97f025",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "000_+/060205 How does RDD compared to dataframes and dataset.md",
+                "file": "000_+/06030205 What transformation operation can be performed on SQL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "060205 How does RDD compared to dataframes and dataset"
+              "title": "06030205 What transformation operation can be performed on SQL"
             }
           }
         ]
@@ -157,13 +157,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "003_skills/data-engineering/0203 Describe tools used in Hadoop eco-system.md",
+                "file": "000_+/06030205 What transformation operation can be performed on SQL.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 0203 Describe tools used in Hadoop eco-system"
+              "title": "Outline of 06030205 What transformation operation can be performed on SQL"
             }
           },
           {
@@ -182,14 +182,14 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "000_+/060205 How does RDD compared to dataframes and dataset.md"
+                "file": "000_+/06030205 What transformation operation can be performed on SQL.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for 060205 How does RDD compared to dataframes and dataset"
+              "title": "File properties for 06030205 What transformation operation can be performed on SQL"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 4
       },
       {
         "id": "a53f6b3c552d2cef",
@@ -204,7 +204,7 @@
               "type": "Timer",
               "state": {},
               "pinned": true,
-              "icon": "lucide-ghost",
+              "icon": "alarm-clock",
               "title": "Timer"
             }
           }
@@ -228,37 +228,37 @@
       "webpage-html-export:Export as HTML": false
     }
   },
-  "active": "24c09262470881a0",
+  "active": "067990dbfa97f025",
   "lastOpenFiles": [
-    "000_+/060203 What transformation and actions can be applied on RDD.md",
-    "000_+/060201 What is RDD.md",
-    "000_+/060205 How does RDD compared to dataframes and dataset.md",
-    "000_+/060208 How broadcast variable and accumulator are used to share variable.md",
-    "000_+/060209 What is task, Jobs and stages in Spark.md",
-    "000_+/060210 What is role of data partitions.md",
-    "000_+/060211 What is difference between re-partition and coalesce.md",
-    "000_+/060303 Advance operator.md",
-    "000_+/060304 Optimization.md",
-    "000_+/06030101 What are the fundamental principles of spark SQL.md",
-    "000_+/060206 Difference between reduce and reduceBykey.md",
-    "000_+/060204 Difference between wide and narrow transformations.md",
-    "000_+/060202 How do spark ensures fault tolerance in RDD.md",
+    "000_+/06030204 Explain different modes in while reading file in spark.md",
+    "000_+/06030203 How can schema be inferred or explicitly defined in data frames.md",
+    "000_+/06030202 What is difference between toDf and createDataFrame.md",
+    "000_+/06030201 How to read data from structured data source.md",
+    "000_+/06030210 What are common dataframe functions for column manipulations.md",
+    "000_+/06030209 How to perform Joins on SQL.md",
+    "000_+/06030208 How to perform windowing operation on SQL.md",
+    "000_+/06030207 What are grouping aggregates.md",
+    "000_+/06030206 What are SQL action operations.md",
+    "000_+/06030205 What transformation operation can be performed on SQL.md",
     "001_Meta/MOC/Data-engineering.md",
-    "003_skills/data-engineering/060106 What are main modules of spark eco-system.md",
-    "006_Organize/To Do/Data engineering.md",
-    "000_+/0602 Data abstraction.md",
-    "000_+/060207 Difference between reduceBykey and groupBykey.md",
-    "000_+/Untitled.base",
-    "003_skills/data-engineering/060105 What is role of driver, cluster manager and executor manager.md",
-    "003_skills/data-engineering/060103 How does spark Session act as entry point.md",
-    "003_skills/data-engineering/060104 Why spark is called unified execution engine.md",
-    "003_skills/data-engineering/060102 How does spark execution flow differ from map-reduce execution.md",
-    "003_skills/data-engineering/060101 What problems do spark solve compared to Hadoop map reduce.md",
-    "003_skills/data-engineering/0601 Architecture.md",
-    "003_skills/data-engineering/06 Spark.md",
-    "000_+/06030410 What is data skew How does salting help in optimizing data skewing.md",
     "001_Meta/media/hdfs_ls_cmd.svg",
     "001_Meta/media/data-engineering-flow.svg",
+    "006_Organize/To Do/Data engineering.md",
+    "003_skills/data-engineering/0603 SQL.md",
+    "003_skills/data-engineering/060301 Fundamentals.md",
+    "003_skills/data-engineering/06030101 What are the fundamental principles of spark SQL.md",
+    "003_skills/data-engineering/06030105 Explain different plans in spark.md",
+    "003_skills/data-engineering/06030104 What is advantages of spark SQL over RDD.md",
+    "003_skills/data-engineering/06030103 How does spark SQL integrate with hive metastore.md",
+    "003_skills/data-engineering/06030102 How does Spark SQL unify relational queries with distributed computing.md",
+    "003_skills/data-engineering/0101 What is big data.md",
+    "003_skills/data-engineering/060102 How does spark execution flow differ from map-reduce execution.md",
+    "003_skills/data-engineering/0506 How does schema evolution handled in Hive.md",
+    "003_skills/data-engineering/0504 How does hive translate to MR and spark.md",
+    "003_skills/data-engineering/0602 Data abstraction.md",
+    "003_skills/data-engineering/060201 What is RDD.md",
+    "000_+/060304 Optimization.md",
+    "000_+/Untitled.base",
     "001_Meta/css/summary.css",
     "001_Meta/css/New Text Document.txt",
     "001_Meta/css",

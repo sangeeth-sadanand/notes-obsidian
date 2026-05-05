@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[000_+/0602 Data abstraction|0602 Data abstraction]]"
+  - "[[003_skills/data-engineering/0602 Data abstraction|0602 Data abstraction]]"
 down:
 prev:
 topic: false
@@ -8,11 +8,13 @@ question: How do spark ensures fault tolerance in RDD?
 ---
 # How do spark ensures fault tolerance in RDD?
 
-
 > [!Summary] Summary
-> Contents
-
-
+> - RDD, fault tolerance is ensured using lineage. lineage is an execution plan that records: how RDD is derived, transformation applied, and parent rold If a RDP partition is lost using this information it recompute the lost RDD. 
+> - The immutability of RDD make it safe and deterministic to re-compute 
+> - When a partition or RDD is lost. spark uses lineage to identify and recompute the partition or RDD. 
+> - It recomputes only lost partitions. 
+> - Lazy evaluation helps in recovery with less complication 
+> - spark retries failed task and also launches duplicate task if a node is abnormally slow. 
 
 Spark ensures **fault tolerance in RDDs** primarily through a mechanism called **lineage**, rather than data replication 
 

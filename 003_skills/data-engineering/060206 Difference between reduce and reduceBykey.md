@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[000_+/0602 Data abstraction|0602 Data abstraction]]"
+  - "[[003_skills/data-engineering/0602 Data abstraction|0602 Data abstraction]]"
 down:
 prev:
 topic: false
@@ -8,21 +8,19 @@ question: Difference between reduce and reduceBykey
 ---
 # Difference between reduce and reduceBykey
 
-
 > [!Summary] Summary
-> Contents
-
-
-|**Feature**|**reduce**|**reduceByKey**|
-|---|---|---|
-|**Type**|Action|Wide Transformation|
-|**Input**|RDD of any type|RDD of Key-Value pairs `(K, V)`|
-|**Output**|A single value (sent to Driver)|A new RDD (stays on Workers)|
-|**Data Movement**|Moves all data to the Driver|Shuffles data between Workers|
-|**Scalability**|Limited by Driver memory|Highly scalable across the cluster|
-
-
-
+> - Reduce is an action, it gives a single result after applying the function.
+> - ReduceByKey give a result per key-value and it is a transformation. It is lazy and require an action to perform. 
+> -  Reduce moves all data to the driver while Reduce by key moves shuffles the data.
+> 
+> |**Feature**|**reduce**|**reduceByKey**|
+> |---|---|---|
+> |**Type**|Action|Wide Transformation|
+> |**Input**|RDD of any type|RDD of Key-Value pairs `(K, V)`|
+> |**Output**|A single value (sent to Driver)|A new RDD (stays on Workers)|
+> |**Data Movement**|Moves all data to the Driver|Shuffles data between Workers|
+> |**Scalability**|Limited by Driver memory|Highly scalable across the cluster|
+> 
 
 - The difference between `reduce` and `reduceByKey` is one of the most common points of confusion in Spark, but it's crucial for performance. 
 - The main distinction is that one is an **Action** that returns a result to your driver, while the other is a **Transformation** that keeps data distributed.

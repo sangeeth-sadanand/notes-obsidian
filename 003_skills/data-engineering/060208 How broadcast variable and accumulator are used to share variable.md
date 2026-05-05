@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[000_+/0602 Data abstraction|0602 Data abstraction]]"
+  - "[[003_skills/data-engineering/0602 Data abstraction|0602 Data abstraction]]"
 down:
 prev:
 topic: false
@@ -8,18 +8,18 @@ question: How broadcast variable and accumulator are used to share variable?
 ---
 # How broadcast variable and accumulator are used to share variable?
 
-
 > [!Summary] Summary
-> Contents
-
-
-| **Feature**     | **Broadcast Variables**            | **Accumulators**                   |
-| --------------- | ---------------------------------- | ---------------------------------- |
-| **Direction**   | Driver $\to$ Executors             | Executors $\to$ Driver             |
-| **Access**      | Read-Only (on Executors)           | Write-Only (on Executors)          |
-| **Primary Use** | Efficiently sharing large datasets | Global counters or sums            |
-| **Update Rule** | Static once created                | Commutative (order doesn't matter) |
-
+> - A broadcast variable is used to share value from driver to the executor 
+> - While an accumulator is used to share value from executor to drivers 
+> - broadcast variable are read-only and accumulators are write-only
+> 
+> | **Feature**     | **Broadcast Variables**            | **Accumulators**                   |
+> | --------------- | ---------------------------------- | ---------------------------------- |
+> | **Direction**   | Driver $\to$ Executors             | Executors $\to$ Driver             |
+> | **Access**      | Read-Only (on Executors)           | Write-Only (on Executors)          |
+> | **Primary Use** | Efficiently sharing large datasets | Global counters or sums            |
+> | **Update Rule** | Static once created                | Commutative (order doesn't matter) |
+> 
 
 - In Apache Spark, **Broadcast variables** and **Accumulators** are the two primary ways to share data between the driver program and the executors. 
 - Since Spark is a distributed system, standard variables aren't automatically shared across the cluster in an efficient way; these two tools solve that in very different directions.

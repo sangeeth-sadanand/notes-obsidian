@@ -2,6 +2,6 @@
 up:
   - "[[003_skills/data-engineering/0603 SQL|0603 SQL]]"
 topic: true
-topic-id: 4
+topic-id: 1
 ---
-# Optimization
+# Fundamentals

@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[000_+/0602 Data abstraction|0602 Data abstraction]]"
+  - "[[003_skills/data-engineering/0602 Data abstraction|0602 Data abstraction]]"
 down:
 prev:
 topic: false
@@ -8,10 +8,15 @@ question: What is RDD?
 ---
 # What is RDD?
 
-
 > [!Summary] Summary
-> Contents
-
+> - RDD Stands for resilent distributed dataset. 
+> - It is core low level data structure for distributed data processing. 
+> - **Key characteristics of RDD**
+> 	- **Resilient** - recovers lost data using lineage 
+> 	- **Distributed**- data is split into partition across cluster 
+> 	- **Immutable** - RDD once created cannot be changed 
+> 	- **Lazy evaluation** - transforms are not evaluated immediately. execution happen on action. 
+> 
 
 In **Apache Spark**, an **RDD** stands for **Resilient Distributed Dataset**.  
 It is the **core, low-level data structure** of Spark used for distributed data processing.

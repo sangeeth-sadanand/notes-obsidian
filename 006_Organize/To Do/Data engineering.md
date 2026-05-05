@@ -1,25 +1,5 @@
 
-## Spark
-### Architecture
-- [ ] What problems do spark solve compared to Hadoop map reduce?
-- [ ] How does spark execution flow differ from map-reduce execution how?
-- [ ] How does spark context act as entry point?
-- [ ] Why spark is called unified execution engine?
-- [ ] What is role of driver, cluster manager and executor manager
-- [ ] What are main modules of spark eco-system?
-### Data abstraction
-- [ ] What is RDD?
-- [ ] 40 How do spark ensures fault tolerance in RDD?
-- [ ] What transformation and actions can be applied on RDD?
-- [ ] Difference between wide and narrow transformations
-- [ ] How does RDD compared to dataframes and dataset?
-- [ ]  Difference between reduce and reduceBykey
-- [ ] 35  000_+/060207 Difference between reduceBykey and groupBykey
-- [ ] How broadcast variable and accumulator are used to share variable
-- [ ] What is task, Jobs and stages in Spark
-- [ ] What is role of data partitions
-- [ ] What is difference between re-partition and coalesce?
-- [ ] How and when to use cache in RDP
+
 
 ### SQL
 
@@ -28,6 +8,7 @@
 - [ ] How does Spark SQL unify relational queries with distributed computing?
 - [ ] How does spark SQL integrate with hive metastore?
 - [ ] What is advantages of spark SQL over RDD?
+- [ ] Explain different plans in spark? 
 #### Operations 
 
 - [ ] 25 How to read data from structured data source

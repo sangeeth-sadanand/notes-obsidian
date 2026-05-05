@@ -17,27 +17,6 @@
         "type": "FILES_AND_DIRECTORIES",
         "pattern": "",
         "patternType": "WILDCARD"
-      },
-      {
-        "name": "",
-        "active": true,
-        "type": "DIRECTORIES",
-        "pattern": "002_Languages",
-        "patternType": "STRICT"
-      },
-      {
-        "name": "",
-        "active": true,
-        "type": "DIRECTORIES",
-        "pattern": "003_skills",
-        "patternType": "STRICT"
-      },
-      {
-        "name": "",
-        "active": true,
-        "type": "DIRECTORIES",
-        "pattern": "001_Meta",
-        "patternType": "STRICT"
       }
     ],
     "frontMatter": [

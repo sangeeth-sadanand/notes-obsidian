@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[000_+/0602 Data abstraction|0602 Data abstraction]]"
+  - "[[003_skills/data-engineering/0602 Data abstraction|0602 Data abstraction]]"
 down:
 prev:
 topic: false
@@ -8,17 +8,19 @@ question: Difference between reduceBykey and groupBykey
 ---
 # Difference between reduceBykey and groupBykey
 
-
 > [!Summary] Summary
-> Contents
-
-| **Feature**          | **reduceByKey**  | **groupByKey**                |
-| -------------------- | ---------------- | ----------------------------- |
-| **Map-side Combine** | Yes              | No                            |
-| **Data Transferred** | Low (Aggregated) | High (All data)               |
-| **Memory Risk**      | Low              | High (Risk of Disk Spill/OOM) |
-| **Result Type**      | `RDD[K, V]`      | `RDD[K, Iterable[V]]`         |
-| **Efficiency**       | Highly Optimized | Less Efficient                |
+> - ReduceByKey and groupByKey both reduces the value based on a key. 
+> - ReduceByKey also reduces the value at the map side, while groupByKey does not do map side reduce 
+> - The data shuffled in reduceByKey is comparatively smaller than the GroupByKey
+> 
+> | **Feature**          | **reduceByKey**  | **groupByKey**                |
+> | -------------------- | ---------------- | ----------------------------- |
+> | **Map-side Combine** | Yes              | No                            |
+> | **Data Transferred** | Low (Aggregated) | High (All data)               |
+> | **Memory Risk**      | Low              | High (Risk of Disk Spill/OOM) |
+> | **Result Type**      | `RDD[K, V]`      | `RDD[K, Iterable[V]]`         |
+> | **Efficiency**       | Highly Optimized | Less Efficient                |
+> 
 
 - In the world of Apache Spark, choosing between `reduceByKey` and `groupByKey` is one of the most common performance-critical decisions you'll make. 
 - While they can often achieve the same result, their underlying mechanics are vastly different.

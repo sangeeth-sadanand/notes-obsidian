@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[000_+/0602 Data abstraction|0602 Data abstraction]]"
+  - "[[003_skills/data-engineering/0602 Data abstraction|0602 Data abstraction]]"
 down:
 prev:
 topic: false
@@ -10,18 +10,19 @@ question: What is role of data partitions?
 
 
 > [!Summary] Summary
-> Contents
-
-| **Concept**             | **Description**                                                                                         |
-| ----------------------- | ------------------------------------------------------------------------------------------------------- |
-| **Default Parallelism** | Usually based on the number of cores in your cluster.                                                   |
-| **repartition()**       | Increases or decreases partitions by performing a full shuffle. Useful for balancing data.              |
-| **coalesce()**          | Efficiently decreases partitions by merging them (minimizes shuffling).                                 |
-| **Data Skew**           | When one partition is much larger than others, causing one "straggler" task to slow down the whole job. |
-
-
-
-
+> - Data partition help in parallelism. 
+> - If a data is partitioned into 10 partitions then 10 tasks are created and executed in parallel 
+> - The size of partition is 128 MB by default 
+> - if partition size increases then memory error occurs 
+> - If size is too low then large number of partition are created.
+> 
+> | **Concept**             | **Description**                                                                                         |
+> | ----------------------- | ------------------------------------------------------------------------------------------------------- |
+> | **Default Parallelism** | Usually based on the number of cores in your cluster.                                                   |
+> | **repartition()**       | Increases or decreases partitions by performing a full shuffle. Useful for balancing data.              |
+> | **coalesce()**          | Efficiently decreases partitions by merging them (minimizes shuffling).                                 |
+> | **Data Skew**           | When one partition is much larger than others, causing one "straggler" task to slow down the whole job. |
+> 
 
 - **Data Partitions** are the fundamental unit of parallelism. 
 - They are the logical chunks that your large dataset is divided into so that multiple cores can process the data simultaneously.

@@ -1,23 +1,25 @@
 ---
 up:
-  - "[[000_+/0602 Data abstraction|0602 Data abstraction]]"
+  - "[[003_skills/data-engineering/0602 Data abstraction|0602 Data abstraction]]"
 down:
 prev:
 topic: false
 question: What is task, Jobs and stages in Spark?
 ---
 # What is task, Jobs and stages in Spark?
-
-
 > [!Summary] Summary
-> Contents
-
-| **Level** | **Scale**      | **Triggered By**                       | **Location**       |
-| --------- | -------------- | -------------------------------------- | ------------------ |
-| **Job**   | Global         | An Action (`count`, `save`, etc.)      | Driver             |
-| **Stage** | Group of Tasks | Shuffle boundaries (Wide dependencies) | Driver / Scheduler |
-| **Task**  | Unit of Work   | Number of partitions in a stage        | Executor           |
-
+> - When an action is trigger a job is created 
+> 	- 1 action = 1 Job 
+> - A job can have multiple stages, a stage is created when shuffle is required for an operation 
+> 	- No of stages = No of wide transform + 1 
+> - Each stage has multiple task, a task is associated with partitions of data
+>
+> | **Level** | **Scale**      | **Triggered By**                       | **Location**       |
+> | --------- | -------------- | -------------------------------------- | ------------------ |
+> | **Job**   | Global         | An Action (`count`, `save`, etc.)      | Driver             |
+> | **Stage** | Group of Tasks | Shuffle boundaries (Wide dependencies) | Driver / Scheduler |
+> | **Task**  | Unit of Work   | Number of partitions in a stage        | Executor           |
+> 
 
 
 ## **1. Jobs (The "What")**

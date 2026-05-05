@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[000_+/0602 Data abstraction|0602 Data abstraction]]"
+  - "[[003_skills/data-engineering/0602 Data abstraction|0602 Data abstraction]]"
 down:
 prev:
 topic: false
@@ -10,16 +10,20 @@ question: What is difference between re-partition and coalesce?
 
 
 > [!Summary] Summary
-> Contents
-
-| **Feature**           | **repartition(n)**                       | **coalesce(n)**                    |
-| --------------------- | ---------------------------------------- | ---------------------------------- |
-| **Primary Goal**      | Increase or Decrease partitions          | Decrease partitions only           |
-| **Shuffle**           | Full Shuffle (Data moves across network) | No Shuffle (Minimal data movement) |
-| **Performance**       | Slower / Resource Intensive              | Faster / Efficient                 |
-| **Data Distribution** | Uniform (Equal size partitions)          | Can result in uneven partitions    |
-| **Parallelism**       | Can increase parallelism                 | Cannot increase parallelism        |
-
+> - **re-partition** is used to increase or decrease the number of partition. 
+> - It does a full shuffle operation 
+> - when the partitions are skewed then use re-partition 
+> - **Coalesce** is used to reduce the number of partition 
+> - It does not do. full shuffling but tries to reduce partition by sending data to nearby nodes
+> 
+> | **Feature**           | **repartition(n)**                       | **coalesce(n)**                    |
+> | --------------------- | ---------------------------------------- | ---------------------------------- |
+> | **Primary Goal**      | Increase or Decrease partitions          | Decrease partitions only           |
+> | **Shuffle**           | Full Shuffle (Data moves across network) | No Shuffle (Minimal data movement) |
+> | **Performance**       | Slower / Resource Intensive              | Faster / Efficient                 |
+> | **Data Distribution** | Uniform (Equal size partitions)          | Can result in uneven partitions    |
+> | **Parallelism**       | Can increase parallelism                 | Cannot increase parallelism        |
+> 
 
 
 While both `repartition` and `coalesce` are used to change the number of partitions in an RDD or DataFrame, they work very differently under the hood. 
@@ -37,14 +41,10 @@ While both `repartition` and `coalesce` are used to change the number of partiti
 - **When to use:** Use this when you are **decreasing** partitions (e.g., after a heavy filter operation) to save on performance.
 
 ## **The "Pitfall" Example**
-
 Suppose you have 1,000 partitions and you want to reduce them to 10 for saving a file:
-
 - **Using `repartition(10)`:** Spark will shuffle 100% of your data across the network to create 10 new, perfectly balanced chunks.
+    - **Using `coalesce(10)`:** Spark will simply keep 10 partitions and "absorb" the other 990 into them without moving data across the network. It's nearly instantaneous by comparison.
     
-- **Using `coalesce(10)`:** Spark will simply keep 10 partitions and "absorb" the other 990 into them without moving data across the network. It's nearly instantaneous by comparison.
-    
-
 > [!tip] 
 > 
 > If you try to use `coalesce` to _increase_ partitions (e.g., `coalesce(100)` on an RDD that has 50), Spark will silently ignore the request and keep it at 50. You **must** use `repartition` to go up.

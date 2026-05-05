@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[000_+/0602 Data abstraction|0602 Data abstraction]]"
+  - "[[003_skills/data-engineering/0602 Data abstraction|0602 Data abstraction]]"
 down:
 prev:
 topic: false
@@ -8,9 +8,13 @@ question: Difference between wide and narrow transformations?
 ---
 # Difference between wide and narrow transformations?
 
-
 > [!Summary] Summary
-> Contents
+> - A **narrow transform** is an operation that does not need a shuffing of data accross nodes 
+> - Shuffling is an expensive operation and need to avoid or reduce data transfer during shuffle 
+> - Operation like map , filter, flatmap, sample, union all are **narrow** transform 
+> - A **wide** transforms is an operation than need data shuffle operation 
+> - A wide transform create a new stage 
+> - Operation like groupByKey, reduceByKey, join, repartition, distinct all creates a **wide** transform 
 
 | **Feature**         | **Narrow Transformation**           | **Wide Transformation**                 |
 | ------------------- | ----------------------------------- | --------------------------------------- |

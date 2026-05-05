@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[000_+/0602 Data abstraction|0602 Data abstraction]]"
+  - "[[003_skills/data-engineering/0602 Data abstraction|0602 Data abstraction]]"
 down:
 prev:
 topic: false
@@ -8,40 +8,38 @@ question: What transformation and actions can be applied on RDD?
 ---
 # What transformation and actions can be applied on RDD?
 
-
 > [!Summary] Summary
-> Contents
-
-| Transformation   | Description                                            |
-| ---------------- | ------------------------------------------------------ |
-| `map()`          | Applies a function to each element                     |
-| `flatMap()`      | Similar to map but returns multiple elements per input |
-| `filter()`       | Filters elements based on a condition                  |
-| `distinct()`     | Removes duplicate elements                             |
-| `union()`        | Combines two RDDs                                      |
-| `intersection()` | Returns common elements                                |
-| `subtract()`     | Removes elements present in another RDD                |
-| `groupByKey()`   | Groups values with the same key                        |
-| `reduceByKey()`  | Aggregates values using a function                     |
-| `sortByKey()`    | Sorts RDD by key                                       |
-| `sample()`       | Takes a random sample                                  |
-| `coalesce()`     | Reduces number of partitions                           |
-| `repartition()`  | Increases or decreases partitions                      |
-
-
-| Action             | Description                                |
-| ------------------ | ------------------------------------------ |
-| `collect()`        | Returns all elements to the driver         |
-| `count()`          | Returns number of elements                 |
-| `first()`          | Returns first element                      |
-| `take(n)`          | Returns first `n` elements                 |
-| `reduce()`         | Aggregates elements using a function       |
-| `foreach()`        | Performs an operation on each element      |
-| `saveAsTextFile()` | Saves RDD to storage                       |
-| `countByKey()`     | Counts elements per key                    |
-| `takeOrdered(n)`   | Returns first `n` elements in sorted order |
-
-
+> 
+> | Transformation   | Description                                            |
+> | ---------------- | ------------------------------------------------------ |
+> | `map()`          | Applies a function to each element                     |
+> | `flatMap()`      | Similar to map but returns multiple elements per input |
+> | `filter()`       | Filters elements based on a condition                  |
+> | `distinct()`     | Removes duplicate elements                             |
+> | `union()`        | Combines two RDDs                                      |
+> | `intersection()` | Returns common elements                                |
+> | `subtract()`     | Removes elements present in another RDD                |
+> | `groupByKey()`   | Groups values with the same key                        |
+> | `reduceByKey()`  | Aggregates values using a function                     |
+> | `sortByKey()`    | Sorts RDD by key                                       |
+> | `sample()`       | Takes a random sample                                  |
+> | `coalesce()`     | Reduces number of partitions                           |
+> | `repartition()`  | Increases or decreases partitions                      |
+> 
+> 
+> | Action             | Description                                |
+> | ------------------ | ------------------------------------------ |
+> | `collect()`        | Returns all elements to the driver         |
+> | `count()`          | Returns number of elements                 |
+> | `first()`          | Returns first element                      |
+> | `take(n)`          | Returns first `n` elements                 |
+> | `reduce()`         | Aggregates elements using a function       |
+> | `foreach()`        | Performs an operation on each element      |
+> | `saveAsTextFile()` | Saves RDD to storage                       |
+> | `countByKey()`     | Counts elements per key                    |
+> | `takeOrdered(n)`   | Returns first `n` elements in sorted order |
+> 
+> 
 
 
 In **Apache Spark**, operations on **RDDs (Resilient Distributed Datasets)** are broadly divided into **Transformations** and **Actions**.

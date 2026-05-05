@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[000_+/0602 Data abstraction|0602 Data abstraction]]"
+  - "[[003_skills/data-engineering/0602 Data abstraction|0602 Data abstraction]]"
 down:
 prev:
 topic: false
@@ -8,18 +8,17 @@ question: How does RDD compared to dataframes and dataset?
 ---
 # How does RDD compared to dataframes and dataset?
 
-
 > [!Summary] Summary
-> Contents
-
-| **Feature**             | **RDD**                         | **DataFrame**          | **Dataset**                                             |
-| ----------------------- | ------------------------------- | ---------------------- | ------------------------------------------------------- |
-| **Data Representation** | Distributed objects             | Named columns (Schema) | Typed objects (Schema + Type)                           |
-| **Optimization**        | None (Manual)                   | Automatic (Catalyst)   | Automatic (Catalyst)                                    |
-| **Type Safety**         | Compile-time                    | Runtime                | Compile-time                                            |
-| **Performance**         | Slower (Serialization overhead) | Fastest                | Fast (but slightly slower than DF due to serialization) |
-| **Language Support**    | Scala, Java, Python, R          | Scala, Java, Python, R | Scala, Java (No Python/R support)                       |
-
+> - RDD are basic building block (low level) while dataframe are high level entity 
+> - RDD works on distributed object while in data frame we work with columns
+> 
+> | **Feature**             | **RDD**                         | **DataFrame**          | **Dataset**                                             |
+> | ----------------------- | ------------------------------- | ---------------------- | ------------------------------------------------------- |
+> | **Data Representation** | Distributed objects             | Named columns (Schema) | Typed objects (Schema + Type)                           |
+> | **Optimization**        | None (Manual)                   | Automatic (Catalyst)   | Automatic (Catalyst)                                    |
+> | **Type Safety**         | Compile-time                    | Runtime                | Compile-time                                            |
+> | **Performance**         | Slower (Serialization overhead) | Fastest                | Fast (but slightly slower than DF due to serialization) |
+> | **Language Support**    | Scala, Java, Python, R          | Scala, Java, Python, R | Scala, Java (No Python/R support)                       |
 
 - The evolution of Spark’s APIs—from RDDs to DataFrames and Datasets—has been driven by two goals: making Spark easier to use and making it run faster. 
 - While they all ultimately represent distributed collections of data, they differ significantly in how they handle optimization and type safety.
