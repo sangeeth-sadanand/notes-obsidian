@@ -12,6 +12,17 @@ question: What are SQL action operations?
 > [!Summary] Summary
 > Contents
 
+|**Category**|**Action / Method**|**Primary Purpose**|**Key Note / Warning**|
+|---|---|---|---|
+|**Data Retrieval**|`show(n)`|Displays the first $n$ rows in the console.|Great for debugging; default $n$ is 20.|
+||`collect()`|Returns the **entire** dataset to the driver.|**Danger:** Can cause `OutOfMemoryError` on large data.|
+||`first()` / `head(n)`|Returns the very first row (or $n$ rows) as objects.|Useful for inspecting schema/values in code.|
+||`take(n)`|Fetches the first $n$ rows to the driver.|Safer than `collect()` for a quick peek at data.|
+|**Stats & Math**|`count()`|Returns the total number of rows.|Often used to verify filter results or data loads.|
+||`describe()` / `summary()`|Provides mean, stddev, min, and max.|Essential for initial Exploratory Data Analysis (EDA).|
+||`reduce(func)`|Aggregates data using a specific binary function.|Combines all rows into a single result (e.g., total sum).|
+|**Export & Save**|`write`|Saves data to files (CSV, Parquet, etc.) or tables.|The primary way to persist results to disk.|
+||`foreach(func)`|Runs a function on every single row.|Typically used for side effects, like calling an external API.|
 
 |**Feature**|**Transformations (e.g., select, filter)**|**Actions (e.g., count, save)**|
 |---|---|---|

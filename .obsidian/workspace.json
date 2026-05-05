@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "000_+/06030205 What transformation operation can be performed on SQL.md",
+                "file": "000_+/06030304 What is user defined Functions UDF_How to use UDF in SQL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06030205 What transformation operation can be performed on SQL"
+              "title": "06030304 What is user defined Functions UDF_How to use UDF in SQL"
             }
           }
         ]
@@ -230,16 +230,20 @@
   },
   "active": "067990dbfa97f025",
   "lastOpenFiles": [
-    "000_+/06030204 Explain different modes in while reading file in spark.md",
-    "000_+/06030203 How can schema be inferred or explicitly defined in data frames.md",
-    "000_+/06030202 What is difference between toDf and createDataFrame.md",
-    "000_+/06030201 How to read data from structured data source.md",
+    "000_+/06030303 How do spark represent null values and how to handle null values.md",
+    "000_+/06030304 What is user defined Functions UDF_How to use UDF in SQL.md",
+    "000_+/06030302 Various methods to unpivot dataframes.md",
+    "000_+/06030301 How do pivot operations reshape data frame.md",
     "000_+/06030210 What are common dataframe functions for column manipulations.md",
     "000_+/06030209 How to perform Joins on SQL.md",
     "000_+/06030208 How to perform windowing operation on SQL.md",
     "000_+/06030207 What are grouping aggregates.md",
     "000_+/06030206 What are SQL action operations.md",
     "000_+/06030205 What transformation operation can be performed on SQL.md",
+    "000_+/06030204 Explain different modes in while reading file in spark.md",
+    "000_+/06030203 How can schema be inferred or explicitly defined in data frames.md",
+    "000_+/06030202 What is difference between toDf and createDataFrame.md",
+    "000_+/06030201 How to read data from structured data source.md",
     "001_Meta/MOC/Data-engineering.md",
     "001_Meta/media/hdfs_ls_cmd.svg",
     "001_Meta/media/data-engineering-flow.svg",
@@ -254,10 +258,6 @@
     "003_skills/data-engineering/0101 What is big data.md",
     "003_skills/data-engineering/060102 How does spark execution flow differ from map-reduce execution.md",
     "003_skills/data-engineering/0506 How does schema evolution handled in Hive.md",
-    "003_skills/data-engineering/0504 How does hive translate to MR and spark.md",
-    "003_skills/data-engineering/0602 Data abstraction.md",
-    "003_skills/data-engineering/060201 What is RDD.md",
-    "000_+/060304 Optimization.md",
     "000_+/Untitled.base",
     "001_Meta/css/summary.css",
     "001_Meta/css/New Text Document.txt",

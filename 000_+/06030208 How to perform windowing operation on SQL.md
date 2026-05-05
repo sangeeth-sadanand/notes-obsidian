@@ -30,6 +30,19 @@ SELECT
 FROM table_name;
 ```
 
+```python
+from pyspark.sql import Window
+from pyspark.sql import functions as F
+
+# 1. Define the Window Specification (the "OVER" clause)
+windowSpec = Window \
+    .partitionBy("column_to_group") \
+    .orderBy("column_to_sort") \
+    .rowsBetween(start_boundary, end_boundary) # Optional: The "ROWS BETWEEN" part
+
+# 2. Apply the Window Function
+df_result = df.withColumn("alias_name", F.function_name("column_name").over(windowSpec))
+```
 ### The Three Pillars of `OVER()`:
 - **`PARTITION BY`**: Acts like a `GROUP BY` but doesn't collapse rows. It divides the data into logical buckets (e.g., partitioning by "Department").
 - **`ORDER BY`**: Defines the sequence of rows within each partition. This is vital for functions like "Running Totals" or "Ranking."

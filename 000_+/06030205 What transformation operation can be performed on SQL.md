@@ -12,6 +12,36 @@ question: What transformation operation can be performed on SQL?
 > [!Summary] Summary
 > Contents
 
+| **Category**          | **Function / Method**   | **SQL Equivalent**        | **Primary Purpose**                                                   |
+| --------------------- | ----------------------- | ------------------------- | --------------------------------------------------------------------- |
+| **Column Operations** | `select` / `selectExpr` | `SELECT`                  | Picks specific columns or performs math/logic transformations.        |
+|                       | `withColumn`            | `SELECT *, (expr) AS...`  | Adds a new column or replaces an existing one.                        |
+|                       | `withColumnRenamed`     | `AS` (Alias)              | Renames a column without changing data.                               |
+|                       | `drop`                  | (Omit from `SELECT`)      | Removes columns from the result set.                                  |
+| **Filtering**         | `filter` / `where`      | `WHERE`                   | Filters rows based on a boolean condition.                            |
+|                       | `distinct`              | `DISTINCT`                | Removes rows that are 100% identical.                                 |
+|                       | `dropDuplicates`        | `ROW_NUMBER()` + Filter   | Removes duplicates based on specific subset columns.                  |
+| **Aggregation**       | `groupBy` + `agg`       | `GROUP BY`                | Collects data into groups and calculates sums, averages, etc.         |
+|                       | `pivot`                 | `PIVOT` / `CASE WHEN`     | Rotates data from rows into columns (cross-tab).                      |
+|                       | `rollup` / `cube`       | `ROLLUP` / `CUBE`         | Creates hierarchical or combinatorial grand totals.                   |
+| **Joining**           | `join`                  | `JOIN`                    | Combines two datasets based on a common key.                          |
+|                       | `crossJoin`             | `CROSS JOIN`              | Creates a Cartesian product (every row with every row).               |
+| **Sorting**           | `orderBy` / `sort`      | `ORDER BY`                | Performs a global sort (requires data shuffling).                     |
+|                       | `sortWithinPartitions`  | `SORT BY`                 | Sorts data locally within partitions (no shuffle).                    |
+| **Set Operations**    | `union` / `unionAll`    | `UNION ALL`               | Merges two datasets (keeps all duplicates).                           |
+|                       | `unionByName`           | (Manual alignment)        | Merges datasets by matching column names rather than position.        |
+|                       | `intersect` / `except`  | `INTERSECT` / `EXCEPT`    | Finds common rows or rows unique to the first dataset.                |
+| **Windowing**         | `Window.partitionBy`    | `OVER (PARTITION BY)`     | Performs calculations across a range of rows without collapsing them. |
+|                       | `rank` / `row_number`   | `RANK()` / `ROW_NUMBER()` | Assigns numerical rankings to rows within a window.                   |
+|                       | `lead` / `lag`          | `LEAD()` / `LAG()`        | Accesses data from subsequent or previous rows.                       |
+| **Missing Data**      | `na.drop`               | `IS NOT NULL`             | Removes rows containing null values.                                  |
+|                       | `na.fill`               | `COALESCE`                | Replaces nulls with a default constant value.                         |
+|                       | `na.replace`            | `CASE WHEN`               | Swaps specific values (like "N/A") for others.                        |
+| **Partitioning**      | `repartition`           | `REPARTITION` hint        | Increases/decreases partitions via a full shuffle.                    |
+|                       | `coalesce`              | `COALESCE` hint           | Decreases partitions efficiently without a full shuffle.              |
+| **Sampling**          | `sample`                | `TABLESAMPLE`             | Returns a random subset percentage of the data.                       |
+|                       | `randomSplit`           | (Manual `RAND()`)         | Splits data into multiple sets (e.g., Train/Test).                    |
+| **Streaming**         | `withWatermark`         | (Table Properties)        | Handles late-arriving data in real-time streams.                      |
 
 
 ## Column Operations 
