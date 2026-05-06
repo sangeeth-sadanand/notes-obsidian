@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[000_+/060302 Operations|060302 Operations]]"
+  - "[[003_skills/data-engineering/060302 Operations|060302 Operations]]"
 down:
 prev:
 topic: false
@@ -10,20 +10,19 @@ question: What are common dataframe functions for column manipulations?
 
 
 > [!Summary] Summary
-> Contents
+> 
+> |Category|Function Examples|Use Case|
+> |---|---|---|
+> |Selection|`col`, `lit`, `expr`, `withColumn`|Access or create columns|
+> |Conditional|`when`, `coalesce`, `isnull`, `nanvl`|Handle nulls, apply logic|
+> |String|`concat`, `split`, `regexp_replace`, `trim`|Text cleaning & formatting|
+> |Math|`abs`, `round`, `sqrt`, `pow`, `greatest`|Numeric transformations|
+> |Array/Map|`array`, `explode`, `create_map`|Complex data structures|
+> |Date/Time|`current_date`, `datediff`, `year`, `month`|Time-based analysis|
+> 
 
-|Category|Function Examples|Use Case|
-|---|---|---|
-|Selection|`col`, `lit`, `expr`, `withColumn`|Access or create columns|
-|Conditional|`when`, `coalesce`, `isnull`, `nanvl`|Handle nulls, apply logic|
-|String|`concat`, `split`, `regexp_replace`, `trim`|Text cleaning & formatting|
-|Math|`abs`, `round`, `sqrt`, `pow`, `greatest`|Numeric transformations|
-|Array/Map|`array`, `explode`, `create_map`|Complex data structures|
-|Date/Time|`current_date`, `datediff`, `year`, `month`|Time-based analysis|
-
-
-## 
-### 1. **Column Selection & Creation**
+ 
+## 1. **Column Selection & Creation**
 
 - **`col("column_name")`** – Access a column by name.
 - **`lit(value)`** – Create a column with a literal value.
@@ -37,7 +36,7 @@ df.select(F.expr("score * 2").alias("expr_col")).show() # expr
 df.withColumn("score_plus_10", F.col("score") + 10).show() # withColumn
 ```
 
-### 2. **Conditional & Null Handling**
+## 2. **Conditional & Null Handling**
 
 - **`when(condition, value)`** – Conditional logic (like SQL CASE).
 - **`coalesce(col1, col2, ...)`** – Return first non-null value.
@@ -53,7 +52,7 @@ df.withColumn("nanvl_demo", F.nanvl(F.lit(float("nan")), F.lit(100))).show()
 
 ```
 
-### 3. **String Manipulations**
+## 3. **String Manipulations**
 
 - **`concat(col1, col2, ...)`** – Concatenate strings.
 - **`split(col, pattern)`** – Split string into array.
@@ -71,7 +70,7 @@ df.withColumn("trim_demo", F.trim(F.col("name"))).show()
 
 ```
 
-### 4. **Math & Numeric Functions**
+## 4. **Math & Numeric Functions**
 
 - **`abs(col)`**, **`round(col, n)`**, **`sqrt(col)`**, **`pow(col, n)`** – Standard math operations.
 - **`greatest(col1, col2, ...)`** / **`least(col1, col2, ...)`** – Compare multiple columns.
@@ -89,7 +88,7 @@ df.withColumn("randn_demo", F.randn()).show()
 
 ```
 
-### 5. **Array & Map Functions**
+## 5. **Array & Map Functions**
 
 - **`array(col1, col2, ...)`** – Create array column.
 - **`explode(array_col)`** – Flatten arrays into rows.
@@ -101,7 +100,7 @@ df.select("id", F.explode("items").alias("item")).show()
 df.withColumn("map_demo", F.create_map(F.lit("id"), F.col("id"))).show()
 
 ```
-### 6. **Date & Time Functions**
+## 6. **Date & Time Functions**
 
 - **`current_date()` / `current_timestamp()`** – Current date/time.
 - **`datediff(col1, col2)`** – Difference in days.

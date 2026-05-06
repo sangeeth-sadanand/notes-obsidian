@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[000_+/060303 Advance operator|060303 Advance operator]]"
+  - "[[003_skills/data-engineering/060303 Advance operator|060303 Advance operator]]"
 down:
 prev:
 topic: false
@@ -10,7 +10,13 @@ question: How do pivot operations reshape data frame?
 
 
 > [!Summary] Summary
-> Contents
+> - Pivot are used to rotate data perspective. It transforms **long** data frame to **wide** data frame 
+> - To pivot a dataframe we need to define three elements: 
+> 	1. Grouping columns 
+> 	2. Pivot columns 
+> 	3. Aggregate function 
+> - if a pivot element does not have a value in a given row for a column then it insert `na` 
+> - It is recommended to provide pivot values otherwise it will eagerly compute the values at runtime causing 2 time computation of data.
 
 - Pivoting is essentially a rotation of your data's perspective. It transforms a **long** dataset (where variables are stored in rows) into a **wide** dataset (where variables become distinct columns).
 

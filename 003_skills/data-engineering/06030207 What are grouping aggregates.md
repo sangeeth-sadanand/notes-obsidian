@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[000_+/060302 Operations|060302 Operations]]"
+  - "[[003_skills/data-engineering/060302 Operations|060302 Operations]]"
 down:
 prev:
 topic: false
@@ -8,9 +8,25 @@ question: What are grouping aggregates?
 ---
 # What are grouping aggregates?
 
-
 > [!Summary] Summary
 > Contents
+> 
+> - A grouping aggregate have three parts: 1. Spliting 
+>     1. Applying 
+>     2. Combining 
+> - We have to use a group by method which returns a grouped Data object. 
+> - We can perform aggregate function on this grouped Data object
+> 
+> | **Function**     | **PySpark SQL Function** | **Description**                              |
+> | ---------------- | ------------------------ | -------------------------------------------- |
+> | **Sum**          | `F.sum()`                | Adds all values in the group.                |
+> | **Average**      | `F.avg()`                | Calculates the arithmetic mean.              |
+> | **Count**        | `F.count()`              | Counts rows (or non-null values).            |
+> | **Min/Max**      | `F.min()` / `F.max()`    | Finds the boundary values.                   |
+> | **Collect List** | `F.collect_list()`       | Returns an array of all values in the group. |
+> 
+> 
+
 
 - In PySpark, **grouping aggregates** are the bread and butter of data analysis. 
 - They allow you to collapse a large dataset into meaningful summaries by "grouping" rows that share the same value in one or more columns and then calculating a metric (like a sum or average) for each group.
@@ -90,18 +106,8 @@ Mathematically, an aggregate function $f$ takes a collection of values $X = \{x_
     
 - **Variance/Standard Deviation:** Useful for understanding the spread of your data.
 
-| **Function**     | **PySpark SQL Function** | **Description**                              |
-| ---------------- | ------------------------ | -------------------------------------------- |
-| **Sum**          | `F.sum()`                | Adds all values in the group.                |
-| **Average**      | `F.avg()`                | Calculates the arithmetic mean.              |
-| **Count**        | `F.count()`              | Counts rows (or non-null values).            |
-| **Min/Max**      | `F.min()` / `F.max()`    | Finds the boundary values.                   |
-| **Collect List** | `F.collect_list()`       | Returns an array of all values in the group. |
-
 ## Important Tips
 
 - **The "GroupedData" Object:** When you call `df.groupBy("col")`, Spark doesn't return a DataFrame immediately. It returns a `GroupedData` object. You **must** call an aggregate function to turn it back into a DataFrame.
-    
 - **Performance:** Grouping causes a **Shuffle**. This means data is moved across the cluster so that all rows for "Sales" end up on the same worker node. If you have millions of unique groups, this can be resource-intensive.
-    
 - **Filtering:** If you want to filter results _after_ grouping (the SQL equivalent of `HAVING`), just use a standard `.filter()` or `.where()` on the resulting DataFrame.

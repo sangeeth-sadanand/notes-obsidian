@@ -1,16 +1,20 @@
 ---
 up:
-  - "[[000_+/060302 Operations|060302 Operations]]"
+  - "[[003_skills/data-engineering/060302 Operations|060302 Operations]]"
 down:
 prev:
 topic: false
-question: How to perform windowing operation on SQL?
+question: How to perform Joins on SQL?
 ---
 # How to perform windowing operation on SQL?
 
 
 > [!Summary] Summary
-> Contents
+> - A window functions performs calculations across a set of rows 
+> - We can use `.over()` or `OVER` to mention optional partition, order and row range 
+> - `partitionBy()` or `PARTITION BY` can be used to define partition which is optional 
+> - `.orderBy()` or `ORDER BY` can be used to define ordering 
+> - `.rowsBetween()` or `ROWS BETWEEN` can be used to define row level control
 
 
 - Window functions are one of the most powerful tools in SQL. 

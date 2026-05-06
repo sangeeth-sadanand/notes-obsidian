@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[000_+/060302 Operations|060302 Operations]]"
+  - "[[003_skills/data-engineering/060302 Operations|060302 Operations]]"
 down:
 prev:
 topic: false
@@ -10,8 +10,11 @@ question: How can schema be inferred or explicitly defined in data frames?
 
 
 > [!Summary] Summary
-> Contents
-
+> - We can use `inferSchema` argument to infer schema using the data.  By enabling this option spark will read the data to infer the data type 
+> - We can explicitly define schema using schema 
+> - We can use `structType`, `structField` to give the expected schema 
+> - We can also define schema using the SQL literal notation to define schema. 
+> - File format like `AVRO` and `parquet` has inbuilt schema and need not to specify schema 
 
 
 In Spark SQL, the **schema** defines the structure of your data—essentially the "blueprint" that tells Spark which columns exist and what data types they hold. You can handle this in two ways: letting Spark guess (**Inference**) or telling Spark exactly what to expect (**Explicit Definition**).

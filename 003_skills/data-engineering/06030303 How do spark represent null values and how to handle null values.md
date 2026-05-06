@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[000_+/060303 Advance operator|060303 Advance operator]]"
+  - "[[003_skills/data-engineering/060303 Advance operator|060303 Advance operator]]"
 down:
 prev:
 topic: false
@@ -10,16 +10,22 @@ question: How do spark represent null values and how to handle null values?
 
 
 > [!Summary] Summary
-> Contents
-
-
-|**Goal**|**Best Method**|**Why?**|
-|---|---|---|
-|**Cleanliness**|`na.drop()`|Removes noise if the record is useless without that data.|
-|**Data Retention**|`na.fill()`|Keeps the row but provides a placeholder (common in ML).|
-|**Priority Selection**|`coalesce()`|Efficiently merges multiple source columns into one.|
-|**Filtering**|`filter(col.isNull())`|Best for auditing or finding the rows that need fixing.|
-
+> - Spark handles null values in two levels 
+> 	- **Schema level**: Every column in spark schema has a column called nullable. 
+> 	- **Physical representation**: spark uses null bit mask for each row. i.e if 3ʳᵈ column in a row is null then it stores 1 in 3rd bit. 
+> - To handle null values we can use: 
+> 	- `df.na.drop()` - to drop the rows which contains na 
+> 	- `df.na.fill()` - to fill the na with a value 
+> 	- `.coalesce()` - here we can pass multiple value to this function the first non-null value will be the output 
+> 	- `.when()`-`otherwise()` - this chained expression can be used to check null values and conditionally manipulate values.
+> 
+> |**Goal**|**Best Method**|**Why?**|
+> |---|---|---|
+> |**Cleanliness**|`na.drop()`|Removes noise if the record is useless without that data.|
+> |**Data Retention**|`na.fill()`|Keeps the row but provides a placeholder (common in ML).|
+> |**Priority Selection**|`coalesce()`|Efficiently merges multiple source columns into one.|
+> |**Filtering**|`filter(col.isNull())`|Best for auditing or finding the rows that need fixing.|
+> 
 
 Spark handles nulls at two levels: the schema level and the physical storage level.
 

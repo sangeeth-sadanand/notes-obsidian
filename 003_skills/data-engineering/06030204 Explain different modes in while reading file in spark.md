@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[000_+/060302 Operations|060302 Operations]]"
+  - "[[003_skills/data-engineering/060302 Operations|060302 Operations]]"
 down:
 prev:
 topic: false
@@ -10,15 +10,15 @@ question: Explain different modes in while reading file in spark
 
 
 > [!Summary] Summary
-> Contents
-
+> - We can use modes to handle corrupt or malformed records 
+> - We can set mode using `.option("mode", "mode-name")` 
+> - **Permissive**: In this mode, if there is mismatch in the schema provided and the data then the data is replaced by null 
+> - **Drop Malformed**: In this mode the malformed row, i. e row with mismatch schema are dropped 
+> - **Fast Fail:**- In this mode, if any data mismatches with the provided schema then it throws error which stops execution.
 
 
 When reading data from structured sources like CSV or JSON, Spark provides **read modes** to handle "corrupt" or "malformed" records. Since real-world data is often messy (missing columns, extra delimiters, or wrong data types), these modes allow you to define the fault-tolerance of your pipeline.
-
 You set the mode using `.option("mode", "MODE_NAME")`.
-
----
 
 ## 1. Permissive (Default)
 The `PERMISSIVE` mode is the most "forgiving." It tries to rescue as much data as possible.
@@ -62,7 +62,6 @@ df = spark.read.format("csv") \
 |**Permissive**|Sets fields to `null`|Continues|Medium (potential nulls)|
 |**DropMalformed**|Deletes the row|Continues|High (but missing rows)|
 |**FailFast**|Stops immediately|**Crashes**|**Highest**|
-
 ### Pro-Tip: The `_corrupt_record` Pattern
 
 If you use `PERMISSIVE` mode, it's highly recommended to explicitly add the `_corrupt_record` field to your schema definition. Without it, you'll see nulls in your data but won't know _why_ the record failed.

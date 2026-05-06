@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[000_+/060302 Operations|060302 Operations]]"
+  - "[[003_skills/data-engineering/060302 Operations|060302 Operations]]"
 down:
 prev:
 topic: false
@@ -10,27 +10,32 @@ question: How to perform Joins on SQL?
 
 
 > [!Summary] Summary
-> Contents
+> 
+> 
+> - **JOIN** is used to combine rows from two or more tables based on a related column between them. 
+> 
+> ```python
+> non_buyers = customers.join(orders, on="id", how="left_anti")
+> ```
+> 
+> |**SQL Type**|**PySpark how argument**|
+> |---|---|
+> |`INNER JOIN`|`"inner"`|
+> |`LEFT OUTER JOIN`|`"left"` or `"left_outer"`|
+> |`RIGHT OUTER JOIN`|`"right"` or `"right_outer"`|
+> |`FULL OUTER JOIN`|`"full"`, `"outer"`, or `"full_outer"`|
+> |`LEFT SEMI JOIN`|`"semi"` or `"left_semi"`|
+> |`LEFT ANTI JOIN`|`"anti"` or `"left_anti"`|
+> 
 
-|**SQL Type**|**PySpark how argument**|
-|---|---|
-|`INNER JOIN`|`"inner"`|
-|`LEFT OUTER JOIN`|`"left"` or `"left_outer"`|
-|`RIGHT OUTER JOIN`|`"right"` or `"right_outer"`|
-|`FULL OUTER JOIN`|`"full"`, `"outer"`, or `"full_outer"`|
-|`LEFT SEMI JOIN`|`"semi"` or `"left_semi"`|
-|`LEFT ANTI JOIN`|`"anti"` or `"left_anti"`|
 
+- **JOIN** is used to combine rows from two or more tables based on a related column between them. 
 
-
-- In SQL, a **JOIN** is used to combine rows from two or more tables based on a related column between them. 
-- Most joins rely on a **Primary Key** (a unique ID in one table) and a **Foreign Key** (that same ID used in another table).
 ## 1. The Common Join Types
 
 To illustrate these, let's imagine two tables: **Customers** and **Orders**.
 
 ### **INNER JOIN**
-
 This is the most common join. It returns only the rows where there is a **match in both tables**. If a customer hasn't placed an order, they won't appear. If an order doesn't have a valid customer ID, it won't appear.
 
 ```sql
@@ -44,8 +49,8 @@ INNER JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
 inner_df = customers.join(orders, on="id", how="inner")
 inner_df.show()
 ```
-### **LEFT (OUTER) JOIN**
 
+### **LEFT (OUTER) JOIN**
 This returns **all rows from the left table**, and the matched rows from the right table. If there is no match, the result will contain `NULL` for the columns of the right table.
 
 - **Use case:** "Show me all customers and their orders, including those who haven't ordered anything yet."
@@ -60,6 +65,7 @@ LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;
 left_df = customers.join(orders, on="id", how="left") # or "left_outer"
 left_df.show()
 ```
+
 ### **RIGHT (OUTER) JOIN**
 The exact opposite of a Left Join. It returns **all rows from the right table**, and matched rows from the left.
 - **Use case:** "Show me all orders and the customers associated with them, including orders that might not have a customer assigned."
@@ -84,13 +90,9 @@ non_buyers = customers.join(orders, on="id", how="left_anti")
 
 
 ## 2. Specialized Joins
-
 ### **CROSS JOIN**
-
 This creates a **Cartesian Product**. It matches every single row from the first table with every single row from the second table. If Table A has 10 rows and Table B has 10 rows, you get 100 rows.
-
 - **Use case:** Generating all possible combinations (e.g., every shirt size matched with every shirt color).
-
 ```sql
 SELECT Sizes.SizeName, Colors.ColorName
 FROM Sizes
@@ -104,7 +106,6 @@ cross_df = customers.crossJoin(orders)
 ### **SELF JOIN**
 This is just a regular join, but the table is joined with **itself**. You must use aliases (temporary names) to distinguish the two "versions" of the table.
 - **Use case:** An `Employees` table where one column is `ManagerID` (which points to the `EmployeeID` of someone else in the same table).
-    
 
 ```df
 SELECT E.EmployeeName AS Staff, M.EmployeeName AS Manager

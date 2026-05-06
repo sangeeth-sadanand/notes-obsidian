@@ -1,6 +1,6 @@
 ---
 up:
-  - "[[000_+/060303 Advance operator|060303 Advance operator]]"
+  - "[[003_skills/data-engineering/060303 Advance operator|060303 Advance operator]]"
 down:
 prev:
 topic: false
@@ -10,16 +10,15 @@ question: Various methods to unpivot dataframes
 
 
 > [!Summary] Summary
-> Contents
-
-
-|**Method**|**Spark Version**|**Best For...**|
-|---|---|---|
-|**`unpivot()`**|3.4+|**General use.** Cleanest syntax and natively optimized.|
-|**`stack()`**|All|**Legacy environments** or high-performance SQL-heavy pipelines.|
-|**`explode()`**|All|**Complex types.** Useful if you are already working with nested structures.|
-|**`melt()`**|3.2+|**Data Scientists** who prefer the Pandas syntax style.|
-
+> Unpivoting (often called **melting**) is the inverse of pivoting. It takes a "wide" dataset with multiple columns and collapses them into "long" rows, usually resulting in two new columns: one for the **header names** (labels) and one for the **values**.
+> 
+> |**Method**|**Spark Version**|**Best For...**|
+> |---|---|---|
+> |**`unpivot()`**|3.4+|**General use.** Cleanest syntax and natively optimized.|
+> |**`stack()`**|All|**Legacy environments** or high-performance SQL-heavy pipelines.|
+> |**`explode()`**|All|**Complex types.** Useful if you are already working with nested structures.|
+> |**`melt()`**|3.2+|**Data Scientists** who prefer the Pandas syntax style.|
+> 
 
 Unpivoting (often called **melting**) is the inverse of pivoting. It takes a "wide" dataset with multiple columns and collapses them into "long" rows, usually resulting in two new columns: one for the **header names** (labels) and one for the **values**.
 
