@@ -108,12 +108,20 @@
       }
     ]
   },
+  "self_is_sibling": [
+    "same"
+  ],
+  "exclude_folders": [],
   "explicit_edge_sources": {
     "typed_link": {},
     "list_note": {
       "default_neighbour_field": ""
     },
     "tag_note": {
+      "default_field": "up",
+      "default_sibling_field": ""
+    },
+    "dataview_note": {
       "default_field": "up"
     },
     "regex_note": {
@@ -123,30 +131,61 @@
       "enabled": false,
       "delimiter": ".",
       "default_field": "up",
+      "default_sibling_field": "",
       "display_trimmed": false
     },
     "johnny_decimal_note": {
       "enabled": false,
       "delimiter": ".",
-      "default_field": "up"
+      "default_field": "up",
+      "default_sibling_field": ""
     },
     "date_note": {
       "enabled": false,
       "date_format": "yyyy-MM-dd",
       "default_field": "next",
-      "stretch_to_existing": false
-    }
+      "stretch_to_existing": false,
+      "week_start": "monday",
+      "week": {
+        "enabled": false,
+        "date_format": "kkkk-'W'WW",
+        "folder": "",
+        "next_field": "next",
+        "up_field": "up"
+      },
+      "month": {
+        "enabled": false,
+        "date_format": "yyyy-MM",
+        "folder": "",
+        "next_field": "next",
+        "up_field": "up"
+      },
+      "quarter": {
+        "enabled": false,
+        "date_format": "yyyy-'Q'q",
+        "folder": "",
+        "next_field": "next",
+        "up_field": "up"
+      },
+      "year": {
+        "enabled": false,
+        "date_format": "yyyy",
+        "folder": "",
+        "next_field": "next",
+        "up_field": "up"
+      }
+    },
+    "traverse_note": {}
   },
   "views": {
     "page": {
       "all": {
-        "sticky": false,
-        "readable_line_width": false
+        "sticky": false
       },
       "trail": {
-        "enabled": false,
+        "enabled": true,
         "format": "grid",
-        "selection": "all",
+        "selection": "longest",
         "default_depth": 999,
         "no_path_message": "",
         "show_controls": true,
@@ -174,6 +213,12 @@
           "next": [
             "nexts"
           ]
+        },
+        "period_rows": {
+          "week": false,
+          "month": false,
+          "quarter": false,
+          "year": false
         }
       }
     },
@@ -184,6 +229,8 @@
           "field": "basename",
           "order": 1
         },
+        "custom_sort_fields": false,
+        "custom_sort_field_labels": [],
         "show_node_options": {
           "ext": false,
           "folder": false,
@@ -202,15 +249,17 @@
           "prevs"
         ],
         "lock_view": false,
-        "lock_path": "003_skills/data-engineering/0203 Describe tools used in Hadoop eco-system.md"
+        "lock_path": ""
       },
       "tree": {
         "collapse": false,
         "show_attributes": [],
         "merge_fields": false,
+        "default_depth": 5,
         "lock_view": false,
         "lock_path": "",
         "field_group_labels": [
+          "ups",
           "downs"
         ],
         "edge_sort_id": {
@@ -221,7 +270,11 @@
           "ext": false,
           "folder": false,
           "alias": false
-        }
+        },
+        "find_root": true,
+        "find_root_field_group_labels": [
+          "ups"
+        ]
       }
     },
     "codeblocks": {
@@ -236,7 +289,7 @@
     "rebuild_graph": {
       "notify": true,
       "trigger": {
-        "note_save": true,
+        "note_save": false,
         "layout_change": false
       }
     },
@@ -270,15 +323,32 @@
         "destination": "frontmatter",
         "target_path_template": "{{source.folder}}/{{attr.field}} {{source.basename}}"
       }
+    },
+    "create_canvas": {
+      "default_options": {
+        "target_path_template": "{{source.folder}}/{{source.basename}} canvas",
+        "depth": 5,
+        "fields": [],
+        "field_group_labels": [],
+        "direction": "LR"
+      }
+    },
+    "edge_audit": {
+      "report_path": "Breadcrumbs Edge Audit.md",
+      "ignore_paths": []
     }
   },
   "suggestors": {
     "edge_field": {
-      "enabled": true,
+      "enabled": false,
       "trigger": "."
     }
   },
   "debug": {
-    "level": "INFO"
+    "level": "SILENT"
+  },
+  "_bc_migrations": {
+    "tree_ups_with_downs_default": true,
+    "tree_find_root_default": true
   }
 }

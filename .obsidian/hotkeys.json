@@ -23,9 +23,6 @@
       "key": "3"
     }
   ],
-  "workspace:goto-tab-3": [],
-  "workspace:goto-tab-1": [],
-  "workspace:goto-tab-2": [],
   "editor:set-heading-4": [
     {
       "modifiers": [
@@ -50,15 +47,54 @@
       "key": "6"
     }
   ],
+  "workspace:goto-tab-1": [],
+  "workspace:goto-tab-2": [],
+  "workspace:goto-tab-3": [],
   "workspace:goto-tab-4": [],
   "workspace:goto-tab-5": [],
   "workspace:goto-tab-6": [],
+  "workspace:goto-tab-7": [],
+  "workspace:goto-tab-8": [],
+  "workspace:goto-last-tab": [],
+  "editor:toggle-source": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "S"
+    }
+  ],
+  "canvas-mindmap:create-child-node": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "ArrowRight"
+    }
+  ],
+  "canvas-mindmap:enter-edit-mode": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "Enter"
+    }
+  ],
+  "editor:follow-link": [],
   "editor:toggle-blockquote": [
     {
       "modifiers": [
         "Alt"
       ],
-      "key": "Q"
+      "key": "."
+    }
+  ],
+  "editor:toggle-highlight": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "="
     }
   ]
 }

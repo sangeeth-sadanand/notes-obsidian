@@ -1,8 +1,13 @@
 {
-  "cssTheme": "Blue Topaz",
+  "interfaceFontFamily": "Merienda",
+  "textFontFamily": "Merienda",
+  "cssTheme": "Underwater",
+  "enabledCssSnippets": [
+    "custom",
+    "hide"
+  ],
   "theme": "obsidian",
-  "textFontFamily": "Comic Sans MS",
-  "interfaceFontFamily": "Comic Sans MS",
-  "baseFontSizeAction": true,
-  "baseFontSize": 19
+  "accentColor": "",
+  "baseFontSize": 24,
+  "baseFontSizeAction": true
 }

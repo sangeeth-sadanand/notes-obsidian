@@ -1,0 +1,6 @@
+.cm-strong{
+  background-image: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

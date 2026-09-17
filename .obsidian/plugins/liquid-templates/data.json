@@ -1,5 +1,5 @@
 {
-  "templatesFolder": "001_Meta/Templates",
+  "templatesFolder": "007_templates",
   "excludeFolders": "",
   "dateFormat": "yyyy-MM-dd",
   "timeFormat": "k:m",

@@ -1,24 +1,44 @@
 {
   "main": {
-    "id": "facb8b8091ca81d3",
+    "id": "e7b76432b3fb2e45",
     "type": "split",
     "children": [
       {
-        "id": "e65932b9b8b161f6",
+        "id": "000c560ac4e451fd",
         "type": "tabs",
         "children": [
           {
-            "id": "c69c101ae949423d",
+            "id": "817260471ab2e3b4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "003_skills/data-engineering/06 Spark/0603 SQL/060304 Optimization/06030410 What is data skew How does salting help in optimizing data skewing.md",
+                "file": "004_Projects/DSA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06030410 What is data skew How does salting help in optimizing data skewing"
+              "title": "DSA"
+            }
+          }
+        ]
+      },
+      {
+        "id": "9ddad21ea1cb61ff",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cff59ccb9d7d5719",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "006_ToDo/DSA.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DSA"
             }
           }
         ]
@@ -27,33 +47,35 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "9d18c14dae8538a6",
+    "id": "8cf837ad4ba58fdb",
     "type": "split",
     "children": [
       {
-        "id": "993d74e159236ae7",
+        "id": "8eaaaf38712121e4",
         "type": "tabs",
         "children": [
           {
-            "id": "4eacd552f4efde14",
+            "id": "6f57a4ef0b9fdda4",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
+                "sortOrder": "byCreatedTime",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
             }
           },
           {
-            "id": "d6c3205370ec2f5a",
+            "id": "5e29a456fdc23724",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "cata",
+                "query": "tag:DataBricks/LakeFlow",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,11 +87,14 @@
             }
           },
           {
-            "id": "14de011c17ca7057",
+            "id": "50024b7526898e44",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
@@ -78,24 +103,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 424.50418853759766
+    "width": 245.5
   },
   "right": {
-    "id": "08e1af449615b3c0",
+    "id": "9ecbdcf683d5df05",
     "type": "split",
     "children": [
       {
-        "id": "f25f9c2c17b8fa10",
+        "id": "597e0893816f37e7",
         "type": "tabs",
-        "dimension": 37.68115942028986,
         "children": [
           {
-            "id": "93c091aa6c1c167a",
+            "id": "dd7032ddfda5894a",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "My Personal Notes.md",
+                "file": "003_DetailedNotes/Big data/Data bricks/Data flow tools/Lake flow connect.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,25 +129,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for My Personal Notes"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "62fd66ad07f20834",
+            "id": "18d11d4c580d27d3",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "My Personal Notes.md",
+                "file": "007_templates/Summary.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from My Personal Notes"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "46f5aacc259324a3",
+            "id": "78d5fb88d9f0e2cb",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -138,7 +162,7 @@
             }
           },
           {
-            "id": "e511928826786676",
+            "id": "b8135eba53c8fa3a",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -152,128 +176,104 @@
             }
           },
           {
-            "id": "66e67db0e4d2304d",
+            "id": "f414598778115d6c",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "000_+/06030205 What transformation operation can be performed on SQL.md",
-                "followCursor": false,
+                "file": "004_Projects/DSA.md",
+                "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 06030205 What transformation operation can be performed on SQL"
+              "title": "Outline"
             }
           },
           {
-            "id": "d55b5f832af241d7",
-            "type": "leaf",
-            "state": {
-              "type": "bc-matrix-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "bc-matrix-view"
-            }
-          },
-          {
-            "id": "f89e3c8d91c8c5d0",
+            "id": "ad8a95cbba7dbb40",
             "type": "leaf",
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "003_skills/data-engineering/06 Spark/0603 SQL/060304 Optimization/06030410 What is data skew How does salting help in optimizing data skewing.md"
+                "file": "001_SummaryNote/Big data.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for 06030410 What is data skew How does salting help in optimizing data skewing"
+              "title": "File properties"
+            }
+          },
+          {
+            "id": "185a8e079ae39406",
+            "type": "leaf",
+            "state": {
+              "type": "timer-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "timer-view"
             }
           }
         ],
-        "currentTab": 2
-      },
-      {
-        "id": "a53f6b3c552d2cef",
-        "type": "tabs",
-        "dimension": 62.31884057971014,
-        "children": [
-          {
-            "id": "c16c91332ec74102",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "Timer",
-              "state": {},
-              "pinned": true,
-              "icon": "alarm-clock",
-              "title": "Timer"
-            }
-          }
-        ]
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 403.5,
-    "collapsed": true
+    "width": 410.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "timer:Open timer": false,
-      "webpage-html-export:Export as HTML": false,
-      "obsidian-kanban:Create new board": false,
-      "progress-tracker:Progress Tracker": false
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "pomodoro-timer:Toggle timer panel": false
     }
   },
-  "active": "4eacd552f4efde14",
+  "active": "817260471ab2e3b4",
   "lastOpenFiles": [
-    "003_skills/data-engineering/06 Spark/0603 SQL/060304 Optimization/06030409 What is catalyst optimizer.md",
-    "003_skills/data-engineering/06 Spark/0603 SQL/060304 Optimization/06030408 What is AQE.md",
-    "003_skills/data-engineering/06 Spark/0603 SQL/060304 Optimization/06030407 How bucketing and partitioning is used to optimize joins.md",
-    "003_skills/data-engineering/06 Spark/0603 SQL/060304 Optimization/06030406 Describe different types of Join technique.md",
-    "003_skills/data-engineering/06 Spark/0603 SQL/060304 Optimization/06030404 How caching optimizes spark operation and how it is applied on Spark SQL.md",
-    "003_skills/data-engineering/06 Spark/0603 SQL/060304 Optimization/06030405 Memory tuning parameters.md",
-    "001_Meta/Templates/cornell.md",
-    "003_skills/data-engineering/06 Spark/0603 SQL/060304 Optimization/06030403 Give an overview of spark memory split.md",
-    "003_skills/data-engineering/06 Spark/0603 SQL/060304 Optimization/06030402 What is thin and thick executors.md",
-    "003_skills/data-engineering/06 Spark/0603 SQL/060304 Optimization/06030401 What are the levels of optimization in spark.md",
-    "003_skills/data-engineering/06 Spark/0603 SQL/060304 Optimization/060304 Optimization.md",
-    "003_skills/data-engineering/06 Spark/0603 SQL/060304 Optimization",
-    "003_skills/data-engineering/06 Spark/0603 SQL/060304 Optimization/06030410 What is data skew How does salting help in optimizing data skewing.md",
-    "006_Organize/To Do/ToDo.md",
-    "006_Organize/To Do/Todo.md",
-    "006_Organize/To Do/Python.md",
-    "001_Meta/MOC/Data-engineering.md",
-    "000_+/Untitled.base",
-    "006_Organize/To Do/Actionable.md",
-    "006_Organize/To Do/Data engineering.md",
-    "003_skills/data-engineering/06 Spark/0603 SQL/060303 Advance operator/06030301 How do pivot operations reshape data frame.md",
-    "003_skills/data-engineering/06 Spark/0603 SQL/060303 Advance operator/06030302 Various methods to unpivot dataframes.md",
-    "003_skills/data-engineering/06 Spark/0603 SQL/060303 Advance operator/060303 Advance operator.md",
-    "003_skills/data-engineering/06 Spark/0603 SQL/060302 Operations/06030201 How to read data from structured data source.md",
-    "003_skills/data-engineering/06 Spark/0603 SQL/060303 Advance operator",
-    "003_skills/data-engineering/06 Spark/0603 SQL/060302 Operations/060302 Operations.md",
-    "003_skills/data-engineering/06 Spark/0603 SQL/060302 Operations",
-    "003_skills/data-engineering/06 Spark/0603 SQL/060301 Fundamentals/06030101 What are the fundamental principles of spark SQL.md",
-    "003_skills/data-engineering/06 Spark/0603 SQL/060301 Fundamentals/060301 Fundamentals.md",
-    "003_skills/data-engineering/06 Spark/0602 Data abstraction/060201 What is RDD.md",
-    "003_skills/data-engineering/06 Spark/0603 SQL/060301 Fundamentals",
-    "003_skills/data-engineering/06 Spark/0603 SQL",
-    "003_skills/data-engineering/06 Spark/0602 Data abstraction",
-    "003_skills/data-engineering/06 Spark/0601 Architecture",
-    "003_skills/data-engineering/06 Spark",
-    "003_skills/data-engineering/05 Hive",
-    "001_Meta/media/spark_memory_management.svg",
-    "001_Meta/media/data-engineering-flow.svg",
-    "001_Meta/media/hdfs_ls_cmd.svg",
-    "Mdbook/src/assets/CoverPage/program.png",
-    "Mdbook/book/assets/CoverPage/program.png",
-    "Mdbook/book/favicon-de23e50b.svg",
-    "Mdbook/book/favicon-8114d1fc.png"
+    "006_ToDo/DSA.md",
+    "006_ToDo/Big Data.md",
+    "004_Projects/DSA.md",
+    "999_New/DSA - datastructures.md",
+    "001_SummaryNote/DSA.md",
+    "003_DetailedNotes/DSA/Algorithm/Array/Basic Operations.md",
+    "004_Projects/DSA",
+    "003_DetailedNotes/DSA/Algorithm/Array/Array.md",
+    "003_DetailedNotes/DSA/Algorithm/Algorithm.md",
+    "003_DetailedNotes/DSA/Data Structures/Data Structures.md",
+    "003_DetailedNotes/DSA/Algorithm/Untitled.md",
+    "003_DetailedNotes/DSA/Algorithm/Array",
+    "003_DetailedNotes/DSA/Data Structures/Stack.md",
+    "003_DetailedNotes/DSA/Data Structures/Array.md",
+    "003_DetailedNotes/DSA/Data Structures/Queue.md",
+    "003_DetailedNotes/DSA/Data Structures/Linked list.md",
+    "005_assets/DSA/LinkedListTypes.png",
+    "003_DetailedNotes/DSA/Analysis of algorithm.md",
+    "005_assets/DSA/TimeComplexityGraph.png",
+    "005_assets/DSA/ArrayAddressCalculation.png",
+    "003_DetailedNotes/DSA/Algorithm",
+    "003_DetailedNotes/DSA/Data Structures",
+    "003_DetailedNotes/DSA/DSA.md",
+    "003_DetailedNotes/Big data/Data bricks/Data bricks.md",
+    "003_DetailedNotes/Big data/Data bricks/Azure/Azure.md",
+    "003_DetailedNotes/Big data/Data bricks/Azure/Cloud Fundamentals.md",
+    "007_templates/002_Chapter.md",
+    "003_DetailedNotes/DSA/Arrays and strings/Arrays and strings.md",
+    "003_DetailedNotes/DSA/Time_and_space_complexity/Space complexity.md",
+    "003_DetailedNotes/DSA/Time_and_space_complexity/Time_and_space_complexity.md",
+    "007_templates/001_Module.md",
+    "007_templates/003_Topic.md",
+    "003_DetailedNotes/DSA/Arrays and strings/Array.md",
+    "003_DetailedNotes/DSA/Arrays and strings",
+    "005_assets/DSA",
+    "003_DetailedNotes/DSA/Time_and_space_complexity",
+    "003_DetailedNotes/DSA/Time and Space complexity",
+    "003_DetailedNotes/DSA/Data stuctures",
+    "003_DetailedNotes/DSA",
+    "005_assets/Big_Data/How to/006_create_azure_workspace.jpg",
+    "005_assets/Big_Data/How to/005_create_azure_workspace.jpg",
+    "005_assets/Big_Data/How to/004_create_azure_workspace.jpg",
+    "005_assets/Big_Data/How to/003_create_azure_workspace.jpg",
+    "005_assets/Big_Data/How to/002_create_azure_workspace.jpg",
+    "005_assets/Big_Data/How to/001_create_azure_workspace.jpg",
+    "005_assets/Big_Data/spark_execution_lifecycle_YARN_cluster.drawio.svg"
   ]
 }

@@ -1,13 +1,14 @@
 [
+  "obsidian-excalidraw-plugin",
+  "obsidian-linter",
+  "various-complements",
   "obsidian-style-settings",
-  "code-styler",
+  "folder-notes",
   "breadcrumbs",
-  "liquid-templates",
   "dataview",
-  "obsidian-paste-image-rename",
-  "timer",
-  "webpage-html-export",
-  "auto-template-trigger",
-  "file-explorer-plus",
-  "obsidian-kanban"
+  "liquid-templates",
+  "obsidian-admonition",
+  "pomodoro-timer",
+  "shiki-highlighter",
+  "tabs"
 ]
