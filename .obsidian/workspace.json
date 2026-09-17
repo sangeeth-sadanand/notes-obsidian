@@ -13,32 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "004_Projects/DSA.md",
+                "file": "003_DetailedNotes/Big data/Data bricks/Lake flow tools/Lake flow tools.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DSA"
-            }
-          }
-        ]
-      },
-      {
-        "id": "9ddad21ea1cb61ff",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "cff59ccb9d7d5719",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "006_ToDo/DSA.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "DSA"
+              "title": "Lake flow tools"
             }
           }
         ]
@@ -75,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:DataBricks/LakeFlow",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.5
+    "width": 534.5
   },
   "right": {
     "id": "9ecbdcf683d5df05",
@@ -181,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "004_Projects/DSA.md",
+                "file": "003_DetailedNotes/Big data/Data bricks/Lake flow tools/Lake flow tools.md",
                 "followCursor": true,
                 "showSearch": false,
                 "searchQuery": ""
@@ -217,7 +197,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 410.5
+    "width": 410.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -229,15 +210,28 @@
   },
   "active": "817260471ab2e3b4",
   "lastOpenFiles": [
+    "003_DetailedNotes/Big data/Data bricks/Lake flow tools/Lake flow jobs.md",
+    "003_DetailedNotes/Big data/Data bricks/Lake flow tools/Lake flow tools.md",
+    "003_DetailedNotes/Big data/Data bricks/Lake flow tools/Lake flow declarative pipeline.md",
+    "003_DetailedNotes/Big data/Data bricks/Lake flow tools/Lake flow connect.md",
+    "003_DetailedNotes/DSA/Algorithm/Array/Sorting.md",
+    "003_DetailedNotes/DSA/Algorithm/Array/Array.md",
     "006_ToDo/DSA.md",
-    "006_ToDo/Big Data.md",
+    "003_DetailedNotes/DSA/Algorithm/Array/Searching.md",
+    "005_assets/DSA/Algorithm/Jumpsearch.png",
+    "005_assets/DSA/Algorithm/Unconfirmed 806025.crdownload",
     "004_Projects/DSA.md",
+    "005_assets/DSA/Algorithm/binary-and-linear-search-animations.gif",
+    "005_assets/DSA/Algorithm/Unconfirmed 784025.crdownload",
+    "005_assets/DSA/Algorithm/Unconfirmed 797776.crdownload",
+    "005_assets/DSA/Algorithm",
+    "Pasted image 20260917162038.png",
+    "003_DetailedNotes/DSA/Algorithm/Algorithm.md",
+    "003_DetailedNotes/DSA/Algorithm/Array/Basic Operations.md",
+    "006_ToDo/Big Data.md",
     "999_New/DSA - datastructures.md",
     "001_SummaryNote/DSA.md",
-    "003_DetailedNotes/DSA/Algorithm/Array/Basic Operations.md",
     "004_Projects/DSA",
-    "003_DetailedNotes/DSA/Algorithm/Array/Array.md",
-    "003_DetailedNotes/DSA/Algorithm/Algorithm.md",
     "003_DetailedNotes/DSA/Data Structures/Data Structures.md",
     "003_DetailedNotes/DSA/Algorithm/Untitled.md",
     "003_DetailedNotes/DSA/Algorithm/Array",
@@ -256,24 +250,11 @@
     "003_DetailedNotes/Big data/Data bricks/Azure/Azure.md",
     "003_DetailedNotes/Big data/Data bricks/Azure/Cloud Fundamentals.md",
     "007_templates/002_Chapter.md",
-    "003_DetailedNotes/DSA/Arrays and strings/Arrays and strings.md",
-    "003_DetailedNotes/DSA/Time_and_space_complexity/Space complexity.md",
-    "003_DetailedNotes/DSA/Time_and_space_complexity/Time_and_space_complexity.md",
-    "007_templates/001_Module.md",
-    "007_templates/003_Topic.md",
-    "003_DetailedNotes/DSA/Arrays and strings/Array.md",
     "003_DetailedNotes/DSA/Arrays and strings",
     "005_assets/DSA",
-    "003_DetailedNotes/DSA/Time_and_space_complexity",
-    "003_DetailedNotes/DSA/Time and Space complexity",
-    "003_DetailedNotes/DSA/Data stuctures",
-    "003_DetailedNotes/DSA",
     "005_assets/Big_Data/How to/006_create_azure_workspace.jpg",
     "005_assets/Big_Data/How to/005_create_azure_workspace.jpg",
     "005_assets/Big_Data/How to/004_create_azure_workspace.jpg",
-    "005_assets/Big_Data/How to/003_create_azure_workspace.jpg",
-    "005_assets/Big_Data/How to/002_create_azure_workspace.jpg",
-    "005_assets/Big_Data/How to/001_create_azure_workspace.jpg",
-    "005_assets/Big_Data/spark_execution_lifecycle_YARN_cluster.drawio.svg"
+    "005_assets/Big_Data/How to/003_create_azure_workspace.jpg"
   ]
 }

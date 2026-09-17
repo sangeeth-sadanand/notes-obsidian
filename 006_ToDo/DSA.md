@@ -2,9 +2,8 @@ Here is a checklist of the core operations and algorithms for each data structur
 
 ### 1. Array
 
-* [ ] Searching: Linear Search and Binary Search
+* [x] Searching: Linear Search and Binary Search
 * [ ] Basic Sorting: Bubble Sort, Selection Sort, and Insertion Sort
-* [ ] Advanced Sorting: Merge Sort and Quick Sort
 * [ ] Two Pointers Pattern (e.g., reversing in-place, target sum)
 * [ ] Sliding Window Pattern (e.g., max sum of subarray size *k*)
 * [ ] Prefix Sum Pattern (e.g., fast range queries)

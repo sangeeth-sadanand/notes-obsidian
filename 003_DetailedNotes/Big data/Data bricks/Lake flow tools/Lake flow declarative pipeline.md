@@ -141,7 +141,7 @@ GROUP BY c.city;
 Python reference
 
 ~~~python
-import dlt
+from pyspark import pipelines as dlt
 from pyspark.sql.functions import col, current_timestamp, sum
 
 # ====================================================================
@@ -309,10 +309,10 @@ FROM cloud_files('abfss://retail@ttmystorageaccount001.dfs.core.windows.net/inpu
 - **Python Example**:
 
 ```python
-import dlt
+from pyspark import pipelines as dp
 from pyspark.sql.functions import current_timestamp, col
 
-@dlt.table(
+@dp.table(
     comment="Raw orders data ingested via Auto Loader"
 )
 def orders_bronze():
@@ -348,7 +348,7 @@ FROM STREAM(orders_bronze);
 ```
 
 ```python {7-9}
-import dlt
+from pyspark import pipelines as dlt
 from pyspark.sql.functions import col
 
 @dlt.table(
@@ -406,7 +406,7 @@ SEQUENCE BY load_time;
 
 - **Python Example (Auto CDC / SCD Type 2)**:
 ```python
-import dlt
+from pyspark import pipelines as dlt
 
 # Customers SCD Type 2
 dlt.create_streaming_table("customers_silver")
@@ -447,7 +447,7 @@ GROUP BY c.city;
 
 - **Python Example**:
 ```sql
-import dlt
+from pyspark import pipelines as dlt
 from pyspark.sql.functions import sum
 
 @dlt.table(

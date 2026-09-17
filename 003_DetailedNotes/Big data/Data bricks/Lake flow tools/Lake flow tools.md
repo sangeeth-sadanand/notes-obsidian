@@ -6,6 +6,7 @@ up:
 index: 4
 type: chapter
 ---
+
 # Lake flow tools
 
 ```dataviewjs
@@ -58,7 +59,7 @@ for (let page of sortedNotes) {
             // Render with dv.paragraph so Markdown formatting and links work
             dv.paragraph(cleanSummary);
         } else {
-            dv.paragraph("*No summary found.*");
+            dv.paragraph(`![[${page.file.name}]]`); 
         }
     }
 }
